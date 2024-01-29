@@ -1,0 +1,12 @@
+
+  2023-11-06 20:56:03 Running ['artisan' todayreminder:send] ...... 170ms FAIL
+  ⇂ '/usr/bin/php8.1' 'artisan' todayreminder:send > '/dev/null' 2>&1  
+
+
+  2023-11-06 21:04:46 Running ['artisan' todayreminder:send] ...... 163ms FAIL
+  ⇂ '/usr/bin/php8.1' 'artisan' todayreminder:send > '/dev/null' 2>&1  
+
+
+  2023-11-06 21:06:25 Running ['artisan' todayreminder:send] ...... 168ms FAIL
+  ⇂ '/usr/bin/php8.1' 'artisan' todayreminder:send > '/dev/null' 2>&1  
+

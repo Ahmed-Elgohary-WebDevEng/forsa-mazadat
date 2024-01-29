@@ -1,0 +1,259 @@
+@import
+url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+.droid-arabic-kufi{font-family: 'Droid Arabic Kufi', serif;}
+/* scroll bar design*/
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a7d5cd; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #236056; 
+}
+
+/* Btn light color*/
+.Btn-lightGreen {
+    background-color: #a7d5cd;
+    color:rgb(35, 96, 86);
+    font-size: xx-small;
+}
+.Btn-lightRed {
+    background-color: #FFC2C2;
+    color: #D92929;
+    font-size: xx-small;
+    width: 70px;;
+}
+/* Btn Outline Color*/
+.btn-outline-Red {
+    border-style: solid;
+    border-color: #D92929;
+}
+.btn-outline-Green{
+    border-style: solid;
+    border-color: #236056;
+}
+
+/* Btn position up of card image */
+.Btn-position{
+    position:absolute;
+    top:5px;
+    right:0px;
+}
+/*Btn Hover color*/
+.Btn-lightRed:hover {
+    color: #FFC2C2;
+
+    background-color: #D92929;
+
+}
+
+.Btn-lightGreen:hover {
+    
+    background-color: #236056;
+}
+
+.Btn-mainBlue:hover {
+    color: #609a90;
+
+    background-color: #70b0dd;
+}
+.borderGreen{
+	 border-style: solid;
+    border-color: #236056;
+	    border-radius:8px;
+	border-width: 2px;
+
+}
+
+.mercado-countdown {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  .mercado-countdown p {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: auto;
+    background-color:rgb(35, 96, 86);
+    margin: 0 0.3em;
+    padding: .1em;
+    border-radius: 3px;
+    box-shaow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    text-align: center;
+  }
+  .mercado-countdown p span:nth-child(1) {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+  }
+  .mercado-countdown p span:nth-child(2) {
+    font-size: 10px;
+    color: #a7d5cd;
+  }
+/*auction details row size*/
+
+	.nfathimg{
+width:70% !important;
+}
+@media (max-width: 575.98px) {
+	.ms1{
+	margin-left:10px;
+}
+	.mainnave{
+    display: flex;
+    justify-content:start;
+
+	}
+	.mes{
+		margin-left:10px !important;
+	}
+     .subscribeImage{
+    margin-right: -10px !important;
+    width: 100% !important;
+}
+	.nfathimg{
+width:90% !important;
+}
+    .navitem{
+		width:50%;
+		margin-right:-40px;
+	
+
+	}
+	.elect{margin-right:-30px;}
+	.navsm{
+		width:20%
+			margin-right:20px;
+	}
+		.navsm1{
+		width:20%
+	}
+	.mercado-countdown {
+    display: flex;
+    flex-flow:nowrap;
+		margin-top:-20px
+		
+  }
+    .subscribeImageman{
+        width: 33%; height: auto;
+    }
+    .entermzadimage{
+        width: 100%;
+        margin-bottom: 20px;
+    align-items: start;
+
+    }
+    .col.imgcol{
+        width: 100% !important;
+        height: auto;
+    }
+    .itemcol{
+        width: 100% !important;
+        height: auto;
+    }
+ 
+    .mazadimagsection{
+        width: 100%;
+    }
+    .manimagesection{
+        width: 100%;
+    }
+     
+}
+
+@media (min-width: 768px) { 
+
+.cardauction{
+    width: 75% !important;
+}
+.mes{
+		margin-right:8px !important;
+	}
+.mazadimagsection{
+    width: 25%;
+}
+.manimagesection{
+    width: 75%;
+}
+.subscribeImage{
+    margin-right: -4px;
+    width: 140px;
+}
+	.entermzadimage{
+  width: 140px;
+		margin-bottom: 20px;
+    align-items: start;
+
+    }
+.nav-item{
+      margin-left: 13px;
+    margin-right: 11px;
+
+}
+.nav-menu{
+      background: url('../img/iconss.png');
+}
+
+}
+.logo{width: 100%;}
+.logo_slider {
+  overflow: hidden;
+margin: auto;
+}
+
+.logo_slider {
+  overflow: hidden;
+}
+
+.logo_slider ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: relative;
+  animation: mymove 20s linear infinite;
+}
+
+.logo_slider ul li {
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: block;
+  border: 1px solid #ccc;
+  margin: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.logo_slider ul li a img {
+  width: 100%;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  0%    { left: 0; }
+  100%  { left: -100%; }
+}
+
+/* Standard syntax */
+
+@keyframes mymove {
+  0%    { left: 0; }
+  100%  { left: -100%; }
+}

@@ -1,0 +1,1701 @@
+
+  2023-11-06 22:14:04 Running ['artisan' todayreminder:send] ...... 165ms FAIL
+  ⇂ '/usr/bin/php8.1' 'artisan' todayreminder:send > '/dev/null' 2>&1  
+
+
+  2023-11-14 22:53:47 Running [Callback] ............................ 5ms FAIL
+  2023-11-14 22:53:47 Running ['artisan' queue:restart] ........... 149ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 22:53:47 Running ['artisan' queue:work] .......... 796,362ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+  2023-11-14 23:07:04 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:07:04 Running ['artisan' queue:restart] ........... 153ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:07:04 Running ['artisan' queue:work] ........... 56,178ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+  2023-11-14 23:24:51 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:24:51 Running ['artisan' queue:restart] ........... 145ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:24:51 Running ['artisan' queue:work] 
+  2023-11-14 23:26:01 Running [Callback] ........................... 15ms FAIL
+  2023-11-14 23:26:01 Running ['artisan' queue:restart] ........... 154ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:26:02 Running ['artisan' queue:work] ........... 72,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+  2023-11-14 23:26:04 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:26:04 Running ['artisan' queue:restart] ........... 148ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:26:04 Running ['artisan' queue:work] ............ 4,168ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+  2023-11-14 23:27:01 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:27:01 Running ['artisan' queue:restart] ........... 153ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:27:01 Running ['artisan' queue:work] ........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+  2023-11-14 23:28:01 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:28:01 Running ['artisan' queue:restart] ........... 154ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:28:01 Running ['artisan' queue:work] ........... 60,171ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+  2023-11-14 23:29:01 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:29:01 Running ['artisan' queue:restart] ........... 150ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:29:01 Running ['artisan' queue:work] ........... 60,175ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+  2023-11-14 23:30:01 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:30:01 Running ['artisan' queue:restart] ........... 153ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:30:01 Running ['artisan' queue:work] ........... 64,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+  2023-11-14 23:31:02 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:31:02 Running ['artisan' queue:restart] ........... 152ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:31:02 Running ['artisan' queue:work] ........... 64,174ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+  2023-11-14 23:32:01 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:32:01 Running ['artisan' queue:restart] ........... 146ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:32:01 Running ['artisan' queue:work] ........... 60,177ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+  2023-11-14 23:33:01 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:33:01 Running ['artisan' queue:restart] ........... 150ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:33:01 Running ['artisan' queue:work] ........... 60,177ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+  2023-11-14 23:34:02 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:34:02 Running ['artisan' queue:restart] ........... 152ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:34:02 Running ['artisan' queue:work] ........... 64,179ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+  2023-11-14 23:35:02 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:35:02 Running ['artisan' queue:restart] ........... 150ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:35:02 Running ['artisan' queue:work] ........... 60,179ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+  2023-11-14 23:36:02 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:36:02 Running ['artisan' queue:restart] ........... 152ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:36:02 Running ['artisan' queue:work] ........... 60,177ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+  2023-11-14 23:37:01 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:37:01 Running ['artisan' queue:restart] ........... 169ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:37:02 Running ['artisan' queue:work] ........... 60,201ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+  2023-11-14 23:38:01 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:38:01 Running ['artisan' queue:restart] ........... 153ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:38:02 Running ['artisan' queue:work] ........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+   INFO  Running scheduled tasks every minute.  
+
+  2023-11-14 23:40:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:40:00 Running ['artisan' queue:restart] ........... 153ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:40:00 Running ['artisan' queue:work] 
+   INFO  Running scheduled tasks every minute.  
+
+.......... 120,196ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+   INFO  Running scheduled tasks every minute.  
+
+  2023-11-14 23:41:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:41:00 Running ['artisan' queue:restart]   2023-11-14 23:41:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:41:00 Running ['artisan' queue:restart]   2023-11-14 23:41:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:41:00 Running ['artisan' queue:restart] ........... 151ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:41:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:41:00 Running ['artisan' queue:work] ........... 154ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:41:00 Running ['artisan' queue:work] ........... 60,175ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+   INFO  Running scheduled tasks every minute.  
+
+  2023-11-14 23:42:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:42:00 Running ['artisan' queue:restart]   2023-11-14 23:42:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:42:00 Running ['artisan' queue:restart]   2023-11-14 23:42:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:42:00 Running ['artisan' queue:restart]   2023-11-14 23:42:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:42:00 Running ['artisan' queue:restart] ........... 151ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:42:00 Running ['artisan' queue:work] ........... 155ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:42:00 Running ['artisan' queue:work] ........... 152ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:42:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:42:00 Running ['artisan' queue:work] ........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,179ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,175ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+   INFO  Running scheduled tasks every minute.  
+
+  2023-11-14 23:43:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:43:00 Running ['artisan' queue:restart]   2023-11-14 23:43:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:43:00 Running ['artisan' queue:restart]   2023-11-14 23:43:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:43:00 Running ['artisan' queue:restart]   2023-11-14 23:43:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:43:00 Running ['artisan' queue:restart]   2023-11-14 23:43:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:43:00 Running ['artisan' queue:restart] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:43:00 Running ['artisan' queue:work] ........... 155ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:43:00 Running ['artisan' queue:work] ........... 150ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:43:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:43:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:43:00 Running ['artisan' queue:work] ........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,187ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+   INFO  Running scheduled tasks every minute.  
+
+  2023-11-14 23:44:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:44:00 Running ['artisan' queue:restart]   2023-11-14 23:44:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:44:00 Running ['artisan' queue:restart]   2023-11-14 23:44:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:44:00 Running ['artisan' queue:restart]   2023-11-14 23:44:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:44:00 Running ['artisan' queue:restart]   2023-11-14 23:44:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:44:00 Running ['artisan' queue:restart]   2023-11-14 23:44:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:44:00 Running ['artisan' queue:restart] ........... 153ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:44:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:44:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:44:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:44:00 Running ['artisan' queue:work] ........... 155ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:44:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:44:00 Running ['artisan' queue:work] ........... 60,184ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,178ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,185ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,177ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+   INFO  Running scheduled tasks every minute.  
+
+  2023-11-14 23:45:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:45:00 Running ['artisan' queue:restart]   2023-11-14 23:45:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:45:00 Running ['artisan' queue:restart]   2023-11-14 23:45:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-14 23:45:00 Running ['artisan' queue:restart]   2023-11-14 23:45:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:45:00 Running ['artisan' queue:restart]   2023-11-14 23:45:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:45:00 Running ['artisan' queue:restart]   2023-11-14 23:45:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:45:00 Running ['artisan' queue:restart]   2023-11-14 23:45:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:45:00 Running ['artisan' queue:restart] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:45:00 Running ['artisan' queue:work] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:45:00 Running ['artisan' queue:work] ........... 151ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:45:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:45:00 Running ['artisan' queue:work] ........... 154ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:45:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:45:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:45:00 Running ['artisan' queue:work] ........... 60,178ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,184ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,182ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+
+   INFO  Running scheduled tasks every minute.  
+
+  2023-11-14 23:46:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:46:00 Running ['artisan' queue:restart]   2023-11-14 23:46:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:46:00 Running ['artisan' queue:restart]   2023-11-14 23:46:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:46:00 Running ['artisan' queue:restart]   2023-11-14 23:46:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:46:00 Running ['artisan' queue:restart]   2023-11-14 23:46:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:46:00 Running ['artisan' queue:restart]   2023-11-14 23:46:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:46:00 Running ['artisan' queue:restart]   2023-11-14 23:46:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:46:00 Running ['artisan' queue:restart]   2023-11-14 23:46:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-14 23:46:00 Running ['artisan' queue:restart] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:46:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:46:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:46:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:46:00 Running ['artisan' queue:work] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:46:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:46:00 Running ['artisan' queue:work] ........... 147ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:46:00 Running ['artisan' queue:work] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:46:00 Running ['artisan' queue:work] ........... 60,179ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,177ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,187ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,185ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,179ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-14 23:47:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:47:00 Running ['artisan' queue:restart]   2023-11-14 23:47:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:47:00 Running ['artisan' queue:restart]   2023-11-14 23:47:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:47:00 Running ['artisan' queue:restart]   2023-11-14 23:47:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:47:00 Running ['artisan' queue:restart]   2023-11-14 23:47:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:47:00 Running ['artisan' queue:restart]   2023-11-14 23:47:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:47:00 Running ['artisan' queue:restart]   2023-11-14 23:47:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:47:00 Running ['artisan' queue:restart]   2023-11-14 23:47:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:47:00 Running ['artisan' queue:restart] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:47:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:47:00 Running ['artisan' queue:work] ........... 166ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:47:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:47:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:47:00 Running ['artisan' queue:work] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:47:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:47:00 Running ['artisan' queue:work] ........... 155ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:47:00 Running ['artisan' queue:work] ........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,184ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,184ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,179ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,182ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-14 23:48:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:48:00 Running ['artisan' queue:restart]   2023-11-14 23:48:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:48:00 Running ['artisan' queue:restart]   2023-11-14 23:48:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:48:00 Running ['artisan' queue:restart]   2023-11-14 23:48:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-14 23:48:00 Running ['artisan' queue:restart]   2023-11-14 23:48:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:48:00 Running ['artisan' queue:restart]   2023-11-14 23:48:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:48:00 Running ['artisan' queue:restart]   2023-11-14 23:48:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:48:00 Running ['artisan' queue:restart]   2023-11-14 23:48:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:48:00 Running ['artisan' queue:restart] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:48:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:48:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:48:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:48:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:48:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:48:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:48:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:48:00 Running ['artisan' queue:work] ........... 60,176ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,189ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,185ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,182ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-14 23:49:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:49:00 Running ['artisan' queue:restart]   2023-11-14 23:49:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:49:00 Running ['artisan' queue:restart]   2023-11-14 23:49:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:49:00 Running ['artisan' queue:restart]   2023-11-14 23:49:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:49:00 Running ['artisan' queue:restart]   2023-11-14 23:49:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:49:00 Running ['artisan' queue:restart]   2023-11-14 23:49:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-14 23:49:00 Running ['artisan' queue:restart]   2023-11-14 23:49:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:49:00 Running ['artisan' queue:restart]   2023-11-14 23:49:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:49:00 Running ['artisan' queue:restart] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:49:00 Running ['artisan' queue:work] ........... 153ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:49:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:49:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:49:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:49:00 Running ['artisan' queue:work] ........... 152ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:49:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:49:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:49:00 Running ['artisan' queue:work] ........... 60,173ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,179ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,182ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,177ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,194ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,184ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,178ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-14 23:50:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:50:00 Running ['artisan' queue:restart]   2023-11-14 23:50:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:50:00 Running ['artisan' queue:restart]   2023-11-14 23:50:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:50:00 Running ['artisan' queue:restart]   2023-11-14 23:50:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:50:00 Running ['artisan' queue:restart]   2023-11-14 23:50:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:50:00 Running ['artisan' queue:restart]   2023-11-14 23:50:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:50:00 Running ['artisan' queue:restart]   2023-11-14 23:50:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-14 23:50:00 Running ['artisan' queue:restart]   2023-11-14 23:50:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:50:00 Running ['artisan' queue:restart] ........... 155ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:50:00 Running ['artisan' queue:work] ........... 152ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:50:00 Running ['artisan' queue:work] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:50:00 Running ['artisan' queue:work] ........... 155ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:50:00 Running ['artisan' queue:work] ........... 154ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:50:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:50:00 Running ['artisan' queue:work] ........... 155ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:50:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:50:00 Running ['artisan' queue:work] ........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,195ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,176ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,185ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,187ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,187ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,195ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-14 23:51:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:51:00 Running ['artisan' queue:restart]   2023-11-14 23:51:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:51:00 Running ['artisan' queue:restart]   2023-11-14 23:51:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:51:00 Running ['artisan' queue:restart]   2023-11-14 23:51:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:51:00 Running ['artisan' queue:restart]   2023-11-14 23:51:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:51:00 Running ['artisan' queue:restart]   2023-11-14 23:51:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:51:00 Running ['artisan' queue:restart]   2023-11-14 23:51:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:51:00 Running ['artisan' queue:restart]   2023-11-14 23:51:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:51:00 Running ['artisan' queue:restart] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:51:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:51:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:51:00 Running ['artisan' queue:work] ........... 152ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:51:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:51:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:51:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:51:00 Running ['artisan' queue:work] ........... 164ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:51:00 Running ['artisan' queue:work] ........... 60,182ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,188ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,177ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,184ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,190ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-14 23:52:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:52:00 Running ['artisan' queue:restart]   2023-11-14 23:52:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-14 23:52:00 Running ['artisan' queue:restart]   2023-11-14 23:52:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:52:00 Running ['artisan' queue:restart]   2023-11-14 23:52:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-14 23:52:00 Running ['artisan' queue:restart]   2023-11-14 23:52:00 Running [Callback] ........................... 16ms FAIL
+  2023-11-14 23:52:00 Running ['artisan' queue:restart]   2023-11-14 23:52:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:52:00 Running ['artisan' queue:restart]   2023-11-14 23:52:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:52:00 Running ['artisan' queue:restart]   2023-11-14 23:52:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-14 23:52:00 Running ['artisan' queue:restart] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:52:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:52:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:52:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:52:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:52:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:52:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:52:00 Running ['artisan' queue:work] ........... 155ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:52:00 Running ['artisan' queue:work] ........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,178ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,187ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,171ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,182ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,185ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,190ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-14 23:53:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:53:00 Running ['artisan' queue:restart]   2023-11-14 23:53:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:53:00 Running ['artisan' queue:restart]   2023-11-14 23:53:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:53:00 Running ['artisan' queue:restart]   2023-11-14 23:53:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:53:00 Running ['artisan' queue:restart]   2023-11-14 23:53:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:53:00 Running ['artisan' queue:restart]   2023-11-14 23:53:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:53:00 Running ['artisan' queue:restart]   2023-11-14 23:53:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:53:00 Running ['artisan' queue:restart]   2023-11-14 23:53:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:53:00 Running ['artisan' queue:restart] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:53:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:53:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:53:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:53:00 Running ['artisan' queue:work] ........... 154ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:53:00 Running ['artisan' queue:work] ........... 154ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:53:00 Running ['artisan' queue:work] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:53:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:53:00 Running ['artisan' queue:work] ........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,187ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,188ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,194ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,190ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,182ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-14 23:54:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:54:00 Running ['artisan' queue:restart]   2023-11-14 23:54:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:54:00 Running ['artisan' queue:restart]   2023-11-14 23:54:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:54:00 Running ['artisan' queue:restart]   2023-11-14 23:54:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:54:00 Running ['artisan' queue:restart]   2023-11-14 23:54:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:54:00 Running ['artisan' queue:restart]   2023-11-14 23:54:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:54:00 Running ['artisan' queue:restart]   2023-11-14 23:54:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:54:00 Running ['artisan' queue:restart]   2023-11-14 23:54:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:54:00 Running ['artisan' queue:restart] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:54:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:54:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:54:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:54:00 Running ['artisan' queue:work] ........... 165ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:54:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:54:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:54:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:54:00 Running ['artisan' queue:work] ........... 60,182ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,188ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,189ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,182ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,177ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,187ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-14 23:55:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:55:00 Running ['artisan' queue:restart]   2023-11-14 23:55:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:55:00 Running ['artisan' queue:restart]   2023-11-14 23:55:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:55:00 Running ['artisan' queue:restart]   2023-11-14 23:55:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:55:00 Running ['artisan' queue:restart]   2023-11-14 23:55:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:55:00 Running ['artisan' queue:restart]   2023-11-14 23:55:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:55:00 Running ['artisan' queue:restart]   2023-11-14 23:55:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-14 23:55:00 Running ['artisan' queue:restart]   2023-11-14 23:55:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-14 23:55:00 Running ['artisan' queue:restart] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:55:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:55:00 Running ['artisan' queue:work] ........... 154ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:55:00 Running ['artisan' queue:work] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:55:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:55:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:55:00 Running ['artisan' queue:work] ........... 167ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:55:00 Running ['artisan' queue:work] ........... 155ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:55:00 Running ['artisan' queue:work] ........... 60,179ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,193ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,179ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,192ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,188ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,187ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-14 23:56:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:56:00 Running ['artisan' queue:restart]   2023-11-14 23:56:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:56:00 Running ['artisan' queue:restart]   2023-11-14 23:56:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-14 23:56:00 Running ['artisan' queue:restart]   2023-11-14 23:56:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:56:00 Running ['artisan' queue:restart]   2023-11-14 23:56:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:56:00 Running ['artisan' queue:restart]   2023-11-14 23:56:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-14 23:56:00 Running ['artisan' queue:restart]   2023-11-14 23:56:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:56:00 Running ['artisan' queue:restart]   2023-11-14 23:56:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:56:00 Running ['artisan' queue:restart] ........... 164ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:56:00 Running ['artisan' queue:work] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:56:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:56:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:56:00 Running ['artisan' queue:work] ........... 164ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:56:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:56:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:56:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:56:00 Running ['artisan' queue:work] ........... 60,184ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,191ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,190ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,191ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,188ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-14 23:57:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:57:00 Running ['artisan' queue:restart]   2023-11-14 23:57:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:57:00 Running ['artisan' queue:restart]   2023-11-14 23:57:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:57:00 Running ['artisan' queue:restart]   2023-11-14 23:57:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:57:00 Running ['artisan' queue:restart]   2023-11-14 23:57:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:57:00 Running ['artisan' queue:restart]   2023-11-14 23:57:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:57:00 Running ['artisan' queue:restart]   2023-11-14 23:57:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:57:00 Running ['artisan' queue:restart]   2023-11-14 23:57:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:57:00 Running ['artisan' queue:restart] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:57:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:57:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:57:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:57:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:57:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:57:00 Running ['artisan' queue:work] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:57:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:57:00 Running ['artisan' queue:work] ........... 60,186ms DONE
+........... 60,188ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,172ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,185ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,177ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,178ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 12,174ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 12,170ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 12,168ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 12,175ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 12,176ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 12,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 12,170ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 12,178ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-14 23:58:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:58:00 Running ['artisan' queue:restart]   2023-11-14 23:58:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:58:00 Running ['artisan' queue:restart]   2023-11-14 23:58:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:58:00 Running ['artisan' queue:restart]   2023-11-14 23:58:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:58:00 Running ['artisan' queue:restart]   2023-11-14 23:58:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:58:00 Running ['artisan' queue:restart]   2023-11-14 23:58:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:58:00 Running ['artisan' queue:restart]   2023-11-14 23:58:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:58:00 Running ['artisan' queue:restart]   2023-11-14 23:58:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:58:00 Running ['artisan' queue:restart] ........... 154ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:58:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:58:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:58:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:58:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:58:00 Running ['artisan' queue:work] ........... 166ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:58:00 Running ['artisan' queue:work] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:58:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:58:00 Running ['artisan' queue:work]   2023-11-14 23:59:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:59:00 Running ['artisan' queue:restart]   2023-11-14 23:59:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:59:00 Running ['artisan' queue:restart]   2023-11-14 23:59:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:59:00 Running ['artisan' queue:restart]   2023-11-14 23:59:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:59:00 Running ['artisan' queue:restart]   2023-11-14 23:59:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:59:00 Running ['artisan' queue:restart]   2023-11-14 23:59:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-14 23:59:00 Running ['artisan' queue:restart]   2023-11-14 23:59:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-14 23:59:00 Running ['artisan' queue:restart]   2023-11-14 23:59:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-14 23:59:00 Running ['artisan' queue:restart] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:59:00 Running ['artisan' queue:work] ........... 154ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:59:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:59:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:59:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:59:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:59:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:59:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-14 23:59:00 Running ['artisan' queue:work] ........... 60,190ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,214ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,178ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,193ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 12,174ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 12,171ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 12,173ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 12,167ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 12,175ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 12,175ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 12,175ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 12,166ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-15 00:00:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:00:00 Running ['artisan' queue:restart]   2023-11-15 00:00:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-15 00:00:00 Running ['artisan' queue:restart]   2023-11-15 00:00:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:00:00 Running ['artisan' queue:restart]   2023-11-15 00:00:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:00:00 Running ['artisan' queue:restart]   2023-11-15 00:00:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-15 00:00:00 Running ['artisan' queue:restart]   2023-11-15 00:00:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:00:00 Running ['artisan' queue:restart]   2023-11-15 00:00:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:00:00 Running ['artisan' queue:restart]   2023-11-15 00:00:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:00:00 Running ['artisan' queue:restart] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:00:00 Running ['artisan' queue:work] ........... 168ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:00:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:00:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:00:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:00:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:00:00 Running ['artisan' queue:work] ........... 164ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:00:00 Running ['artisan' queue:work] ........... 166ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:00:00 Running ['artisan' queue:work]   2023-11-15 00:01:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:01:00 Running ['artisan' queue:restart]   2023-11-15 00:01:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:01:00 Running ['artisan' queue:restart]   2023-11-15 00:01:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:01:00 Running ['artisan' queue:restart]   2023-11-15 00:01:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:01:00 Running ['artisan' queue:restart]   2023-11-15 00:01:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:01:00 Running ['artisan' queue:restart]   2023-11-15 00:01:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:01:00 Running ['artisan' queue:restart]   2023-11-15 00:01:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:01:00 Running ['artisan' queue:restart]   2023-11-15 00:01:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:01:00 Running ['artisan' queue:restart] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:01:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:01:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:01:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:01:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:01:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:01:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:01:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:01:00 Running ['artisan' queue:work] ........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,184ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,185ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,176ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,176ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-15 00:02:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:02:00 Running ['artisan' queue:restart]   2023-11-15 00:02:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:02:00 Running ['artisan' queue:restart]   2023-11-15 00:02:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-15 00:02:00 Running ['artisan' queue:restart]   2023-11-15 00:02:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:02:00 Running ['artisan' queue:restart]   2023-11-15 00:02:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:02:00 Running ['artisan' queue:restart]   2023-11-15 00:02:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:02:00 Running ['artisan' queue:restart]   2023-11-15 00:02:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:02:00 Running ['artisan' queue:restart]   2023-11-15 00:02:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-15 00:02:00 Running ['artisan' queue:restart] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:02:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:02:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:02:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:02:00 Running ['artisan' queue:work] ........... 154ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:02:00 Running ['artisan' queue:work] ........... 164ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:02:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:02:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:02:00 Running ['artisan' queue:work] ........... 60,179ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,191ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,185ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,209ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,190ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,187ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-15 00:03:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:03:00 Running ['artisan' queue:restart]   2023-11-15 00:03:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:03:00 Running ['artisan' queue:restart]   2023-11-15 00:03:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:03:00 Running ['artisan' queue:restart]   2023-11-15 00:03:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:03:00 Running ['artisan' queue:restart]   2023-11-15 00:03:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:03:00 Running ['artisan' queue:restart]   2023-11-15 00:03:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:03:00 Running ['artisan' queue:restart]   2023-11-15 00:03:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:03:00 Running ['artisan' queue:restart]   2023-11-15 00:03:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:03:00 Running ['artisan' queue:restart] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:03:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:03:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:03:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:03:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:03:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:03:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:03:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:03:00 Running ['artisan' queue:work] ........... 60,179ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,177ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,177ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,188ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,192ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-15 00:04:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-15 00:04:00 Running ['artisan' queue:restart]   2023-11-15 00:04:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:04:00 Running ['artisan' queue:restart]   2023-11-15 00:04:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:04:00 Running ['artisan' queue:restart]   2023-11-15 00:04:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:04:00 Running ['artisan' queue:restart]   2023-11-15 00:04:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:04:00 Running ['artisan' queue:restart]   2023-11-15 00:04:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:04:00 Running ['artisan' queue:restart]   2023-11-15 00:04:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:04:00 Running ['artisan' queue:restart]   2023-11-15 00:04:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-15 00:04:00 Running ['artisan' queue:restart] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:04:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:04:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:04:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:04:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:04:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:04:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:04:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:04:00 Running ['artisan' queue:work] ........... 60,173ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,184ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,173ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,185ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,202ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-15 00:05:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:05:00 Running ['artisan' queue:restart]   2023-11-15 00:05:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:05:00 Running ['artisan' queue:restart]   2023-11-15 00:05:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:05:00 Running ['artisan' queue:restart]   2023-11-15 00:05:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:05:00 Running ['artisan' queue:restart]   2023-11-15 00:05:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:05:00 Running ['artisan' queue:restart]   2023-11-15 00:05:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:05:00 Running ['artisan' queue:restart]   2023-11-15 00:05:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:05:00 Running ['artisan' queue:restart]   2023-11-15 00:05:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:05:00 Running ['artisan' queue:restart] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:05:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:05:00 Running ['artisan' queue:work] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:05:00 Running ['artisan' queue:work] ........... 154ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:05:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:05:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:05:00 Running ['artisan' queue:work] ........... 166ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:05:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:05:00 Running ['artisan' queue:work] ........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,184ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,189ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,179ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,190ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-15 00:06:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:06:00 Running ['artisan' queue:restart]   2023-11-15 00:06:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:06:00 Running ['artisan' queue:restart]   2023-11-15 00:06:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:06:00 Running ['artisan' queue:restart]   2023-11-15 00:06:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:06:00 Running ['artisan' queue:restart]   2023-11-15 00:06:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:06:00 Running ['artisan' queue:restart]   2023-11-15 00:06:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:06:00 Running ['artisan' queue:restart]   2023-11-15 00:06:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:06:00 Running ['artisan' queue:restart]   2023-11-15 00:06:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:06:00 Running ['artisan' queue:restart] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:06:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:06:00 Running ['artisan' queue:work] ........... 152ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:06:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:06:00 Running ['artisan' queue:work] ........... 155ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:06:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:06:00 Running ['artisan' queue:work] ........... 164ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:06:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:06:00 Running ['artisan' queue:work] ........... 60,196ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,179ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,189ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,177ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,184ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,195ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-15 00:07:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:07:00 Running ['artisan' queue:restart]   2023-11-15 00:07:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:07:00 Running ['artisan' queue:restart]   2023-11-15 00:07:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:07:00 Running ['artisan' queue:restart]   2023-11-15 00:07:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:07:00 Running ['artisan' queue:restart]   2023-11-15 00:07:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:07:00 Running ['artisan' queue:restart]   2023-11-15 00:07:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:07:00 Running ['artisan' queue:restart]   2023-11-15 00:07:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:07:00 Running ['artisan' queue:restart]   2023-11-15 00:07:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-15 00:07:00 Running ['artisan' queue:restart] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:07:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:07:00 Running ['artisan' queue:work] ........... 166ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:07:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:07:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:07:00 Running ['artisan' queue:work] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:07:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:07:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:07:00 Running ['artisan' queue:work] ........... 60,189ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,189ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,179ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,182ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-15 00:08:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:08:00 Running ['artisan' queue:restart]   2023-11-15 00:08:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:08:00 Running ['artisan' queue:restart]   2023-11-15 00:08:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-15 00:08:00 Running ['artisan' queue:restart]   2023-11-15 00:08:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-15 00:08:00 Running ['artisan' queue:restart]   2023-11-15 00:08:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:08:00 Running ['artisan' queue:restart]   2023-11-15 00:08:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:08:00 Running ['artisan' queue:restart]   2023-11-15 00:08:00 Running [Callback] ........................... 16ms FAIL
+  2023-11-15 00:08:00 Running ['artisan' queue:restart]   2023-11-15 00:08:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:08:00 Running ['artisan' queue:restart] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:08:00 Running ['artisan' queue:work] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:08:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:08:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:08:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:08:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:08:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:08:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:08:00 Running ['artisan' queue:work] ........... 60,182ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,187ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,190ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,187ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,190ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,182ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,188ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-15 00:09:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:09:00 Running ['artisan' queue:restart]   2023-11-15 00:09:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:09:00 Running ['artisan' queue:restart]   2023-11-15 00:09:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:09:00 Running ['artisan' queue:restart]   2023-11-15 00:09:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:09:00 Running ['artisan' queue:restart]   2023-11-15 00:09:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:09:00 Running ['artisan' queue:restart]   2023-11-15 00:09:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:09:00 Running ['artisan' queue:restart]   2023-11-15 00:09:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:09:00 Running ['artisan' queue:restart]   2023-11-15 00:09:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:09:00 Running ['artisan' queue:restart] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:09:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:09:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:09:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:09:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:09:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:09:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:09:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:09:00 Running ['artisan' queue:work] ........... 60,187ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,191ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,185ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,188ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,188ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,175ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 32,187ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 32,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 32,175ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 32,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 32,174ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 32,176ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 32,175ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 32,178ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-15 00:10:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:10:00 Running ['artisan' queue:restart]   2023-11-15 00:10:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-15 00:10:00 Running ['artisan' queue:restart]   2023-11-15 00:10:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:10:00 Running ['artisan' queue:restart]   2023-11-15 00:10:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:10:00 Running ['artisan' queue:restart]   2023-11-15 00:10:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:10:00 Running ['artisan' queue:restart]   2023-11-15 00:10:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:10:00 Running ['artisan' queue:restart]   2023-11-15 00:10:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-15 00:10:00 Running ['artisan' queue:restart]   2023-11-15 00:10:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:10:00 Running ['artisan' queue:restart] ........... 187ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:10:00 Running ['artisan' queue:work] ........... 155ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:10:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:10:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:10:00 Running ['artisan' queue:work] ........... 157ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:10:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:10:00 Running ['artisan' queue:work] ........... 164ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:10:00 Running ['artisan' queue:work] ........... 154ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:10:00 Running ['artisan' queue:work]   2023-11-15 00:11:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:11:00 Running ['artisan' queue:restart]   2023-11-15 00:11:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:11:00 Running ['artisan' queue:restart]   2023-11-15 00:11:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:11:00 Running ['artisan' queue:restart]   2023-11-15 00:11:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:11:00 Running ['artisan' queue:restart]   2023-11-15 00:11:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:11:00 Running ['artisan' queue:restart]   2023-11-15 00:11:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:11:00 Running ['artisan' queue:restart]   2023-11-15 00:11:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-15 00:11:00 Running ['artisan' queue:restart]   2023-11-15 00:11:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:11:00 Running ['artisan' queue:restart] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:11:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:11:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:11:00 Running ['artisan' queue:work] ........... 155ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:11:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:11:00 Running ['artisan' queue:work] ........... 156ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:11:00 Running ['artisan' queue:work] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:11:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:11:00 Running ['artisan' queue:work] ........... 60,196ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,208ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,184ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,185ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,192ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,187ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,184ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,182ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-15 00:12:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:12:00 Running ['artisan' queue:restart]   2023-11-15 00:12:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:12:00 Running ['artisan' queue:restart]   2023-11-15 00:12:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-15 00:12:00 Running ['artisan' queue:restart]   2023-11-15 00:12:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:12:00 Running ['artisan' queue:restart]   2023-11-15 00:12:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-15 00:12:00 Running ['artisan' queue:restart]   2023-11-15 00:12:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:12:00 Running ['artisan' queue:restart]   2023-11-15 00:12:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-15 00:12:00 Running ['artisan' queue:restart]   2023-11-15 00:12:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:12:00 Running ['artisan' queue:restart] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:12:00 Running ['artisan' queue:work] ........... 164ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:12:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:12:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:12:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:12:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:12:00 Running ['artisan' queue:work] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:12:00 Running ['artisan' queue:work] ........... 164ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:12:00 Running ['artisan' queue:work] ........... 60,187ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,179ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,185ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,182ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,188ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,173ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-15 00:13:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:13:00 Running ['artisan' queue:restart]   2023-11-15 00:13:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-15 00:13:00 Running ['artisan' queue:restart]   2023-11-15 00:13:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:13:00 Running ['artisan' queue:restart]   2023-11-15 00:13:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:13:00 Running ['artisan' queue:restart]   2023-11-15 00:13:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:13:00 Running ['artisan' queue:restart]   2023-11-15 00:13:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-15 00:13:00 Running ['artisan' queue:restart]   2023-11-15 00:13:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:13:00 Running ['artisan' queue:restart] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:13:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:13:00 Running ['artisan' queue:work] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:13:00 Running ['artisan' queue:work] ........... 163ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:13:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:13:00 Running ['artisan' queue:work] ........... 153ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:13:00 Running ['artisan' queue:work] ........... 161ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:13:00 Running ['artisan' queue:work] ........... 60,185ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,182ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,187ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,189ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,177ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-15 00:14:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:14:00 Running ['artisan' queue:restart]   2023-11-15 00:14:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:14:00 Running ['artisan' queue:restart]   2023-11-15 00:14:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:14:00 Running ['artisan' queue:restart]   2023-11-15 00:14:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:14:00 Running ['artisan' queue:restart]   2023-11-15 00:14:00 Running [Callback] ........................... 15ms FAIL
+  2023-11-15 00:14:00 Running ['artisan' queue:restart]   2023-11-15 00:14:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:14:00 Running ['artisan' queue:restart] ........... 164ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:14:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:14:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:14:00 Running ['artisan' queue:work] ........... 160ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:14:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:14:00 Running ['artisan' queue:work] ........... 159ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:14:00 Running ['artisan' queue:work] ........... 60,185ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,191ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,190ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,185ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-15 00:15:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-15 00:15:00 Running ['artisan' queue:restart]   2023-11-15 00:15:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:15:00 Running ['artisan' queue:restart]   2023-11-15 00:15:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:15:00 Running ['artisan' queue:restart]   2023-11-15 00:15:00 Running [Callback] ........................... 14ms FAIL
+  2023-11-15 00:15:00 Running ['artisan' queue:restart] ........... 155ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:15:00 Running ['artisan' queue:work] ........... 162ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:15:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:15:00 Running ['artisan' queue:work] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:15:00 Running ['artisan' queue:work] ........... 60,181ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,190ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,177ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,190ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-15 00:16:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-15 00:16:00 Running ['artisan' queue:restart]   2023-11-15 00:16:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-15 00:16:00 Running ['artisan' queue:restart]   2023-11-15 00:16:00 Running [Callback] ........................... 13ms FAIL
+  2023-11-15 00:16:00 Running ['artisan' queue:restart] ........... 158ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:16:00 Running ['artisan' queue:work] ........... 155ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:16:00 Running ['artisan' queue:work] ........... 155ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:16:00 Running ['artisan' queue:work] ........... 60,179ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,183ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+........... 60,180ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
+  2023-11-15 00:17:00 Running [Callback] ........................... 12ms FAIL
+  2023-11-15 00:17:00 Running ['artisan' queue:restart] ........... 152ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:restart > '/dev/null' 2>&1  
+  2023-11-15 00:17:00 Running ['artisan' queue:work] ........... 60,186ms DONE
+  ⇂ '/usr/bin/php8.1' 'artisan' queue:work > '/dev/null' 2>&1  
+
