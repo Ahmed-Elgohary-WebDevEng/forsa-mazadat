@@ -1,0 +1,14 @@
+@import "home.css";
+@import "index.css";
+@import "auction.show.css";
+
+
+.auction-title {
+  padding-bottom: 5px;
+  border-bottom: 4px solid var(--text-gray);
+  letter-spacing: 1px;
+}
+
+.bg-gray-primary {
+  background: var(--primary-gray);
+}

@@ -1,23 +1,18 @@
 <?php
 
+use App\Http\Controllers\AgentsController;
 use App\Http\Controllers\AuctionsController;
 use App\Http\Controllers\AuctionsItemsController;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\FrontendController;
-use App\Http\Controllers\FrontendRegisterController;
-use App\Http\Controllers\FrontendSigninController;
-use App\Http\Controllers\ResetPasswordController;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ReminderController;
-use App\Http\Controllers\UserManagementController;
+use App\Http\Controllers\ResetPasswordController;
+use App\Http\Controllers\stakeholderController;
 use App\Http\Controllers\TypeFormController;
 use App\Http\Controllers\UserLogController;
-use App\Http\Controllers\stakeholderController;
-use App\Http\Controllers\AgentsController;
+use App\Http\Controllers\UserManagementController;
+use Illuminate\Support\Facades\Route;
 
 Route::get('slider', function () {
     return view('website.slider');
@@ -172,7 +167,7 @@ Route::get('typecontent/{Type}', [FrontendController::class, 'TypeContent']);
 }); */
 
 
-Route::get('/AcutionItems/{Auctions_slug}', [FrontendController::class, 'auctionContent']);
+Route::get('/auctions/{slug}', [FrontendController::class, 'auctionContent']);
 Route::get('userLog/{id}', [FrontendController::class, 'userLog'])->name('userLog');
 Route::post('userLog/{id}', [FrontendController::class, 'Userlogstore']);
 
