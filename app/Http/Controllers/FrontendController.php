@@ -18,54 +18,37 @@ use Vonage\SMS\Message\SMS;
 
 class FrontendController extends Controller
 {
-
-    public function index(Request $request)
+    public function homePage()
     {
-        $auctions_query = Auctions::query();
+        $stakeholder = stakeholder::get();
         $paginate = true;
-        // layout variables
-        $agents = agents::get();
-        $agentHeadLogos = agents::limit(5)->get();
 
-        if ($request->region) {
-            $auctions = $auctions_query->where('Region', $request->region)->get();
-            $paginate = false;
-        } elseif ($request->type) {
-            $auctions = $auctions_query->where('type', $request->type)->get();
-            $paginate = false;
-        } elseif ($request->date) {
-            if ($request->date === 'soon') {
-                $auctions = $auctions_query->where('dateOfStarting', '>', Carbon::today()->toDateString())->get();
-            }
+        $auctions = Auctions::filter(request(['region', 'type', 'date']))
+            ->orderBy('dateOfStarting', 'desc')
+            ->paginate(6)
+            ->withQueryString();
 
-            if ($request->date === 'now') {
-                $auctions = $auctions_query
-                    ->where(function ($query) {
-                        $query->where('dateOfStarting', '=', Carbon::today()->toDateString())
-                            ->where('dateOfEnding', '!=', Carbon::today()->toDateString());
-                    })
-                    ->orWhere(function ($query) {
-                        $query->where('dateOfStarting', '<=', Carbon::today()->toDateString())
-                            ->where('dateOfEnding', '>', Carbon::today()->toDateString());
-                    })
-                    ->get();
-            }
+        return view('index', compact('auctions', 'stakeholder', 'paginate'));
+    }
 
-            if ($request->date == 'done') {
-                $auctions = $auctions_query
-                    ->where('dateOfEnding', '<=', Carbon::today()->toDateString())
-                    ->get();
-            }
+    public function showAuctionDetails($slug)
+    {
+        $auction = Auctions::where('slug', $slug)->first();
 
-            $paginate = false;
-        } else {
-            $auctions = $auctions_query->select('*')->paginate(6);
-        }
+        return view('auction-details', compact('auction'));
+    }
 
+
+    // Old functions
+    public function index()
+    {
+        $auctions = Auctions::get();
 
         $stakeholder = stakeholder::get();
 
-        return view('index', compact('auctions', 'stakeholder', 'agents', 'agentHeadLogos', 'paginate'));
+        $agent = agents::get();
+
+        return view('website.index', compact('auctions', 'stakeholder', 'agent'));
     }
 
     public function auction()
@@ -76,17 +59,12 @@ class FrontendController extends Controller
         return view('website.allRegion', compact('auctions'));
     }
 
-    public function auctionContent($slug)
+    public function auctionContent($Auctions_slug)
     {
-        // layout variables
-        $agents = agents::get();
-        $agentHeadLogos = agents::limit(5)->get();
+        $auction = Auctions::where('slug', $Auctions_slug)->first();
+        $auctions = Auctions::where('slug', $Auctions_slug)->first();
 
-        $auction = Auctions::where('slug', $slug)->first();
-        $auctions = Auctions::where('slug', $slug)->first();
-
-
-        return view('auction-details', compact('auction', 'auctions', 'agents', 'agentHeadLogos'));
+        return view('website.Actiondetailes', compact('auction', 'auctions'));
     }
 
     public function userLog($id)

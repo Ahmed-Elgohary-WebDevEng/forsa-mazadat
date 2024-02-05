@@ -27,13 +27,44 @@ Route::get('slider', function () {
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+// -------------------------------
+// --------- New Routes ----------
+// -------------------------------
+Route::get('/', [FrontendController::class, 'homePage']);
+Route::get('/auctions/{slug}', [FrontendController::class, 'showAuctionDetails']);
+
+
+// -----------------------------------------------------------------------------------------------
+
+// -------------------------------
+// --------- Old Routes ----------
+// -------------------------------
+// 1- public website routes
+//Route::get('/', [FrontendController::class, 'index']);
+Route::get('/Auctions', [FrontendController::class, 'auction']);
+//Route::get('/index', [FrontendController::class, 'index'])->name('indexweb');
+Route::get('/region', [FrontendController::class, 'region']);
+Route::get('/type', [FrontendController::class, 'Type']);
+Route::get('regioncontent/{Region}', [FrontendController::class, 'qassim_region_content']);
+Route::get('typecontent/{Type}', [FrontendController::class, 'TypeContent']);
+
+//Route::get('/AcutionItems/{Auctions_slug}', [FrontendController::class, 'auctionContent']);
+Route::get('userLog/{id}', [FrontendController::class, 'userLog'])->name('userLog');
+Route::post('userLog/{id}', [FrontendController::class, 'Userlogstore']);
+
+Route::get('add-reminder/{id}', [ReminderController::class, 'create']);
+Route::post('add-reminder/{id}', [ReminderController::class, 'store']);
+
+Route::get('reminder/{id}', [FrontendController::class, 'create'])->name('reminder');
+Route::post('reminder/{id}', [FrontendController::class, 'reminderstore']);
+
 Route::get('/terms', function () {
     return view('website.terms');
 });
 Route::get('/dashboard', function () {
     return view('auth.login');
 });
-Route::get('/', [FrontendController::class, 'index']);
 Route::post('run-command', [ReminderController::class, 'runCommand'])->name('run-command');
 
 Route::group(['middleware' => 'auth'], function () {
@@ -150,12 +181,6 @@ Route::post('/loginweb',  [FrontendSigninController::class, 'authenticate']); */
 Route::post('/registerweb',[FrontendRegisterController::class, 'storeUser']);
 Route::post('/registerweb',[FrontendRegisterController::class, 'storeUser']); */
 
-Route::get('/Auctions', [FrontendController::class, 'auction']);
-Route::get('/index', [FrontendController::class, 'index'])->name('indexweb');
-Route::get('/region', [FrontendController::class, 'region']);
-Route::get('/type', [FrontendController::class, 'Type']);
-Route::get('regioncontent/{Region}', [FrontendController::class, 'qassim_region_content']);
-Route::get('typecontent/{Type}', [FrontendController::class, 'TypeContent']);
 
 /* Route::group(['middleware'=>'auth:webuser'], function(){
 
@@ -167,15 +192,6 @@ Route::get('typecontent/{Type}', [FrontendController::class, 'TypeContent']);
 }); */
 
 
-Route::get('/auctions/{slug}', [FrontendController::class, 'auctionContent']);
-Route::get('userLog/{id}', [FrontendController::class, 'userLog'])->name('userLog');
-Route::post('userLog/{id}', [FrontendController::class, 'Userlogstore']);
-
-Route::get('add-reminder/{id}', [ReminderController::class, 'create']);
-Route::post('add-reminder/{id}', [ReminderController::class, 'store']);
-
-Route::get('reminder/{id}', [FrontendController::class, 'create'])->name('reminder');
-Route::post('reminder/{id}', [FrontendController::class, 'reminderstore']);
 /* Route::get('login', [FrontendSigninController::class, 'signinweb'])->name('login');
 Route::post('custom-login', [FrontendSigninController::class, 'authenticate'])->name('login.custom');
 Route::get('registration', [FrontendSigninController::class, 'registration'])->name('register-user');

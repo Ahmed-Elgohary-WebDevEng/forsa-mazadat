@@ -184,18 +184,16 @@
 }
 
 #company-banner .slider-container {
-    animation: moveToLeft 60s infinite linear;
+    animation: moveToLeft 80s infinite linear;
 }
 
 #company-banner img {
     max-height: 170px;
     object-fit: fill;
-    width: 33%;
+    width: 25%;
     object-position: center;
-    margin-inline: 10px;
+    margin-inline: 0;
     mix-blend-mode: multiply;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @keyframes moveToLeft {
@@ -239,8 +237,8 @@
 
 #header .company-head-logos img {
     max-width: 150px;
-    height: 60px;
-    object-fit: cover;
+    height: 80px;
+    object-fit: contain;
     mix-blend-mode: multiply;
 }
 
@@ -305,7 +303,7 @@
 }
 
 .auction-card img {
-    height: 260px;
+    height: 235px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;

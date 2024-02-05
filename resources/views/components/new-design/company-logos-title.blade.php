@@ -1,5 +1,3 @@
-@props(['agents'])
-
 <div class="row flex-row company-head-logos">
     @foreach($agents as $item)
         <img
@@ -8,4 +6,3 @@
         />
     @endforeach
 </div>
-

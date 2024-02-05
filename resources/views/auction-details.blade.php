@@ -13,7 +13,7 @@
         <div class="row gx-5 gy-3 mb-5">
             <div class="col-lg-9 order-1">
                 {{--  Company head logos  --}}
-                <x-new-design.company-logos-title :agents="$agentHeadLogos"></x-new-design.company-logos-title>
+                <x-new-design.company-logos-title></x-new-design.company-logos-title>
 
                 <div class="row mt-3 mb-2">
                     <div
@@ -105,7 +105,7 @@
                     <div class="col-md-3 text-center">
                         <img
                             class="img-fluid object-fit-cover rounded-4 shadow-sm mx-auto"
-                            style="height: 235px"
+                            style="height: 185px"
                             src="{{asset('uploads/auction/'.$auction->image)}}"
                             alt="auction-img"
                         />

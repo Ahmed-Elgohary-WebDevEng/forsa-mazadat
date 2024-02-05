@@ -1,3 +1,8 @@
+@php use App\Models\Auctions; @endphp
+@php
+    $regions = Auctions::select('Region')->distinct()->get();
+@endphp
+
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid px-0">
         <a class="navbar-brand m-0" href="#">
@@ -22,43 +27,47 @@
                 <ul class="sub-menu dropdown-content">
                     <li><a class="dropdown-item" href="{{ url('/') }}">الكل</a></li>
                     <li class="{{ request()->query('region') === 'makka' ? 'active' : '' }}">
-                        <a class="dropdown-item" href="{{ url('/?region=makka') }}">مكة المكرمة</a>
+                        <a class="dropdown-item" href="/?region=makka&{{ http_build_query(request()->except('region', 'page')) }}">مكة
+                            المكرمة</a>
                     </li>
                     <li class="{{ request()->query('region') === 'almadina' ? 'active' : '' }}">
-                        <a class="dropdown-item" href="{{ url('/?region=almadina') }}">المدينة المنورة</a>
+                        <a class="dropdown-item" href="/?region=almadina&{{ http_build_query(request()->except('region', 'page')) }}">المدينة
+                            المنورة</a>
                     </li>
                     <li class="{{ request()->query('region') === 'riyadh' ? 'active' : '' }}">
-                        <a class="dropdown-item" href="{{ url('/?region=riyadh') }}">الرياض</a>
+                        <a class="dropdown-item" href="/?region=riyadh&{{ http_build_query(request()->except('region', 'page')) }}">الرياض</a>
                     </li>
                     <li class="{{ request()->query('region') === 'qassim' ? 'active' : '' }}">
-                        <a class="dropdown-item" href="{{ url('/?region=qassim') }}">القصيم</a>
+                        <a class="dropdown-item" href="/?region=qassim&{{ http_build_query(request()->except('region', 'page')) }}">القصيم</a>
                     </li>
                     <li class="{{ request()->query('region') === 'haael' ? 'active' : '' }}">
-                        <a class="dropdown-item" href="{{ url('/?region=haael') }}">حائل</a>
+                        <a class="dropdown-item" href="/?region=haael&{{ http_build_query(request()->except('region', 'page')) }}">حائل</a>
                     </li>
                     <li class="{{ request()->query('region') === 'alsharqia' ? 'active' : '' }}">
-                        <a class="dropdown-item" href="{{ url('/?region=alsharqia') }}">المنطقة الشرقية</a>
+                        <a class="dropdown-item" href="/?region=alsharqia&{{ http_build_query(request()->except('region', 'page')) }}">المنطقة
+                            الشرقية</a>
                     </li>
                     <li class="{{ request()->query('region') === 'aljuof' ? 'active' : '' }}">
-                        <a class="dropdown-item" href="{{ url('/?region=aljuof') }}">الجوف</a>
+                        <a class="dropdown-item" href="/?region=aljuof&{{ http_build_query(request()->except('region', 'page')) }}">الجوف</a>
                     </li>
                     <li class="{{ request()->query('region') === 'tabuk' ? 'active' : '' }}">
-                        <a class="dropdown-item" href="{{ url('/?region=tabuk') }}">تبوك</a>
+                        <a class="dropdown-item" href="/?region=tabuk&{{ http_build_query(request()->except('region', 'page')) }}">تبوك</a>
                     </li>
                     <li class="{{ request()->query('region') === 'najran' ? 'active' : '' }}">
-                        <a class="dropdown-item" href="{{ url('/?region=najran') }}">نجران</a>
+                        <a class="dropdown-item" href="/?region=najran&{{ http_build_query(request()->except('region', 'page')) }}">نجران</a>
                     </li>
                     <li class="{{ request()->query('region') === 'jazan' ? 'active' : '' }}">
-                        <a class="dropdown-item" href="{{ url('/?region=jazan') }}">جازان</a>
+                        <a class="dropdown-item" href="/?region=jazan&{{ http_build_query(request()->except('region', 'page')) }}">جازان</a>
                     </li>
                     <li class="{{ request()->query('region') === 'albaha' ? 'active' : '' }}">
-                        <a class="dropdown-item" href="{{ url('/?region=albaha') }}">الباحة</a>
+                        <a class="dropdown-item" href="/?region=albaha&{{ http_build_query(request()->except('region', 'page')) }}">الباحة</a>
                     </li>
                     <li class="{{ request()->query('region') === 'shmaleah' ? 'active' : '' }}">
-                        <a class="dropdown-item" href="{{ url('/?region=shmaleah') }}">المنطقة الشمالية</a>
+                        <a class="dropdown-item" href="/?region=shmaleah&{{ http_build_query(request()->except('region', 'page')) }}">المنطقة
+                            الشمالية</a>
                     </li>
                     <li class="{{ request()->query('region') === 'asser' ? 'active' : '' }}">
-                        <a class="dropdown-item" href="{{ url('/?region=asser') }}">عسير</a>
+                        <a class="dropdown-item" href="/?region=asser&{{ http_build_query(request()->except('region', 'page')) }}">عسير</a>
                     </li>
                 </ul>
             </li>
@@ -71,9 +80,15 @@
                 </div>
 
                 <ul class="sub-menu dropdown-content">
-                    <li><a class="dropdown-item" href="{{ url('/?type=onsite') }}">حضورى</a></li>
-                    <li><a class="dropdown-item" href="{{ url('/?type=online') }}">الكتروني</a></li>
-                    <li><a class="dropdown-item" href="{{ url('/?type=mixed') }}">هجين</a></li>
+                    <li class="{{ request()->query('type') === 'onsite' ? 'active' : '' }}">
+                        <a class="dropdown-item" href="/?type=onsite&{{ http_build_query(request()->except('type', 'page')) }}">حضورى</a>
+                    </li>
+                    <li class="{{ request()->query('type') === 'online' ? 'active' : '' }}">
+                        <a class="dropdown-item" href="/?type=online&{{ http_build_query(request()->except('type', 'page')) }}">الكتروني</a>
+                    </li>
+                    <li class="{{ request()->query('type') === 'mixed' ? 'active' : '' }}">
+                        <a class="dropdown-item" href="/?type=mixed&{{ http_build_query(request()->except('type', 'page')) }}">هجين</a>
+                    </li>
                 </ul>
             </li>
             <li class="nav-item">

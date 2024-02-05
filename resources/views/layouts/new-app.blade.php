@@ -51,11 +51,11 @@
 
     <main id="content" style="position: relative">
         <!--    Company Banner (Start)    -->
-        <x-new-design.company-banner :agents="$agents"></x-new-design.company-banner>
+        <x-new-design.company-banner></x-new-design.company-banner>
         <!--    Company Banner (End)    -->
         <section
             id="header"
-            class="mt-5"
+            class="mt-4"
             style="position: relative; z-index: 20"
         >
 
