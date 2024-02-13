@@ -125,6 +125,7 @@ Route::controller(UserManagementController::class)->group(function () {
 
 // -------------------------- auction ----------------------//
 Route::get('auction', [AuctionsController::class, 'index'])->middleware('auth');
+
 Route::get('add_auction', [AuctionsController::class, 'create'])->middleware('auth');
 Route::post('add_auction', [AuctionsController::class, 'store']);
 Route::get('edit_auction/{id}', [AuctionsController::class, 'edit'])->middleware('auth');

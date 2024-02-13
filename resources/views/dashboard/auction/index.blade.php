@@ -138,13 +138,16 @@
                                     <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>عنوان المزاد</th>
+                                        <th> إسم المنصة</th>
                                         <th>منطقة المزاد</th>
                                         <th>نوع المزاد</th>
+                                        <th>عنوان المزاد</th>
+
                                         <th>تاريخ ووقت البداية المزاد</th>
                                         <th> إظهار انفاذ</th>
-                                        <th> إسم المنصة</th>
-                                        <th> محتوى</th>
+                                        <th></th>
+                                        <th>عدد المسجلين</th>
+                                        {{--                                        <th> محتوى</th>--}}
 
                                     </tr>
                                     </thead>
@@ -152,7 +155,7 @@
                                     @foreach ($auction as $item)
                                         <tr class="content">
                                             <td>{{ $item->id }}</td>
-                                            <td>{{ $item->Title }}</td>
+                                            <td>{{ $item->PlatformName }}</td>
                                             <td> @if ($item->Region =='riyadh' )
                                                     {{"الرياض"}}
                                                 @elseif ($item->Region =='makka')
@@ -180,7 +183,6 @@
                                                 @elseif ($item->Region =='asser')
                                                     {{"عسير "}}
                                                 @endif</td>
-
                                             <td>@if ($item->type == "onsite")
                                                     {{"حضوري"}}
                                                 @elseif ($item->type == "online")
@@ -188,15 +190,16 @@
                                                 @elseif ($item->type == "mixed")
                                                     {{"هجين"}}
                                                 @endif</td>
+                                            <td>{{ $item->Title }}</td>
                                             <td>{{ $item->dateOfStarting }} / {{ $item->timeOfStarting }}</td>
                                             <td>{{ $item->ShowInfath }}</td>
-                                            <td>{{ $item->PlatformName }}</td>
 
-                                            <td>
-                                                <a href="{{ url('auctionitem/'.$item->id) }}"
-                                                   class="btn btn-primary btn-sm"> المحتوى</a>
 
-                                            </td>
+                                            {{--                                            <td>--}}
+                                            {{--                                                <a href="{{ url('auctionitem/'.$item->id) }}"--}}
+                                            {{--                                                   class="btn btn-primary btn-sm"> المحتوى</a>--}}
+
+                                            {{--                                            </td>--}}
                                             <td>
                                                 <a href="{{ url('edit_auction/'.$item->id) }}"
                                                    class="btn btn-primary btn-sm">تعديل</a>
@@ -207,6 +210,7 @@
                                                     المشتركين</a>
 
                                             </td>
+                                            {{--                                            <td>{{ $item->AuctionUserLogs->count() }}</td>--}}
                                             <td>
                                                 <a href="{{ url('reminderindex/'.$item->id) }}" class="btn btn-primary btn-sm">سجل
                                                     المشتركين بالتذكير</a>
