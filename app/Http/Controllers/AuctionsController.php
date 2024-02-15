@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
+use Illuminate\Validation\Rule;
 
 class AuctionsController extends Controller
 {
@@ -30,8 +31,6 @@ class AuctionsController extends Controller
             'Region' => 'required',
             'type' => 'required',
             'link' => 'required',
-//            'onsiteLink' => 'required',
-//            'onsiteLinkoo' => 'required',
             'ShowInfath' => 'required',
             'PlatformName' => 'required',
             'description' => 'required',
@@ -39,6 +38,8 @@ class AuctionsController extends Controller
             'timeOfStarting' => 'required',
             'dateOfEnding' => 'required',
             'image' => 'required',
+            'timeOeEnding' => 'required',
+            'companyName' => 'required'
         ]);
 
         $filenameImg = '';
@@ -86,22 +87,24 @@ class AuctionsController extends Controller
                 'slug' => Str::slug($request->Title),
                 'image' => $filenameImg,
                 'PlatformImage' => $platformImg,
+                // added new
+                'timeOfEnding' => $request->timeOfEnding,
+                'companyName' => $request->companyName,
+                'infoDetails' => $request->infoDetails
             ]);
 
 //        dd($updatedAuction);
 
             // 2- create auction item using auction data
 
-            $createdAuction->acution_item()->create([
-                'name' => $request->auctionItemName,
-                'space' => $request->auctionItemSpace,
-                'slug' => Str::slug($createdAuction->Title)
-            ]);
+//            $createdAuction->acution_item()->create([
+//                'name' => $request->auctionItemName,
+//                'space' => $request->auctionItemSpace,
+//                'slug' => Str::slug($createdAuction->Title)
+//            ]);
         });
 
         return redirect()->to('auction')->with('status', 'تمت إضافة المزاد بنجاح');
-
-        // return redirect()->back()->with('status','تمت إضافة المزاد بنجاح');
     }
 
     public function create()
@@ -111,68 +114,76 @@ class AuctionsController extends Controller
 
     public function edit($id)
     {
-        $auction = Auctions::find($id);
+        $auction = Auctions::findOrFail($id);
         return view('dashboard.auction.edit', compact('auction'));
     }
 
     public function update(Request $request, $id)
     {
-        $auction = Auctions::find($id);
-        /* $request->validate([
-                'Title' => 'required|string|unique:auctions',
-            ]);*/
-        $auction->Region = $request->Region;
-        $auction->Title = $request->Title;
-        $auction->description = $request->description;
-        $auction->ShowInfath = $request->ShowInfath;
-        $auction->PlatformName = $request->PlatformName;
-        $auction->description = $request->description;
-        $auction->dateOfStarting = $request->dateOfStarting;
-        $auction->timeOfStarting = $request->timeOfStarting;
-        $auction->type = $request->type;
-        $auction->link = $request->link;
-        $auction->onsiteLink = $request->onsiteLink;
-        $auction->onsiteLinkoo = $request->onsiteLinkoo;
+        $auction = Auctions::findOrFail($id);
 
+        $request->validate([
+            "Title" => ['required', 'string', Rule::unique('auctions', 'Title')->ignore($auction->id)],
+            'Region' => 'required',
+            'type' => 'required',
+            'link' => 'required',
+            'ShowInfath' => 'required',
+            'PlatformName' => 'required',
+            'description' => 'required',
+            'dateOfStarting' => 'required',
+            'timeOfStarting' => 'required',
+            'timeOfEnding' => 'required',
+            'dateOfEnding' => 'required',
+            'companyName' => 'required'
+        ]);
 
-        // $auction-> timeOfEnding = $request->timeOfEnding;
-        $auction->dateOfEnding = $request->dateOfEnding;
-        $auction->nowdate = Carbon::now();
-
-        $auction->slug = Str::slug($request->Title);
-        /* if($request->hasfile('image'))
-        {
-            $destination = 'uploads/auction/'.$auction->image;
-            if(File::exists($destination))
-            {
+        $filenameImg = '';
+        if ($request->hasfile('image')) {
+            $destination = 'uploads/auction/'.$request->image;
+            if (File::exists($destination)) {
                 File::delete($destination);
             }
             $file = $request->file('image');
             $extention = $file->getClientOriginalExtension();
-            $filename = time(). '.'.$extention;
-            $file->move('uploads/auction/', $filename);
-            $auction->image = $filename;
+            $filenameImg = time().'.'.$extention;
+            $file->move('uploads/auction/', $filenameImg);
         }
-*/
-        if ($request->hasfile('image')) {
-            $file = $request->file('image');
-            $extention = $file->getClientOriginalName();
-            $filename = $auction->id.'.'.$extention;
-            $file->move('uploads/auction/', $filename);
-            $auction->image = $filename;
 
-        }
+        $platformImg = '';
         if ($request->hasfile('PlatformImage')) {
+            $destination = 'uploads/auction/'.$request->PlatformImage;
+            if (File::exists($destination)) {
+                File::delete($destination);
+            }
             $file = $request->file('PlatformImage');
-            $extention = $file->getClientOriginalName();
-            $filename = $auction->id.'.'.$extention;
-            $file->move('uploads/auction/', $filename);
-            $auction->PlatformImage = $filename;
-
+            $extention = $file->getClientOriginalExtension();
+            $platformImg = time().'.'.$extention;
+            $file->move('uploads/auction/', $platformImg);
         }
 
+        $auction->update([
+            'Region' => $request->Region,
+            'Title' => $request->Title,
+            'type' => $request->type,
+            'link' => $request->link,
+            'onsiteLink' => $request->onsiteLink,
+            'onsiteLinkoo' => $request->onsiteLinkoo,
+            'ShowInfath' => $request->ShowInfath,
+            'PlatformName' => $request->PlatformName,
+            'description' => $request->description,
+            'dateOfStarting' => $request->dateOfStarting,
+            'timeOfStarting' => $request->timeOfStarting,
+            'dateOfEnding' => $request->dateOfEnding,
+            'nowdate' => Carbon::now()->toDateTimeString(),
+            'slug' => Str::slug($request->Title),
+            'image' => $filenameImg,
+            'PlatformImage' => $platformImg,
+            // added new
+            'timeOfEnding' => $request->timeOfEnding,
+            'companyName' => $request->companyName,
+            'infoDetails' => $request->infoDetails
+        ]);
 
-        $auction->update();
 
         return redirect()->back()->with('status', ' تم تحديث المزاد بنجاح');
 

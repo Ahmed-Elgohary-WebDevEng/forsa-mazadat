@@ -138,15 +138,22 @@
                                     <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th> إسم المنصة</th>
+                                        <th> إسم المزاد</th>
                                         <th>منطقة المزاد</th>
                                         <th>نوع المزاد</th>
-                                        <th>عنوان المزاد</th>
-
-                                        <th>تاريخ ووقت البداية المزاد</th>
-                                        <th> إظهار انفاذ</th>
-                                        <th></th>
+                                        <th>الشركة</th>
+                                        <th>معلومات التواصل</th>
+                                        <th>عدد زوار المزاد</th>
+                                        <th>عدد الأيام المتبقية</th>
                                         <th>عدد المسجلين</th>
+                                        <th></th>
+
+                                        {{--                                        <th>عنوان المزاد</th>--}}
+
+                                        {{--                                        <th>تاريخ ووقت البداية المزاد</th>--}}
+                                        {{--                                        <th> إظهار انفاذ</th>--}}
+                                        {{--                                        <th></th>--}}
+                                        {{--                                        <th>عدد المسجلين</th>--}}
                                         {{--                                        <th> محتوى</th>--}}
 
                                     </tr>
@@ -155,7 +162,7 @@
                                     @foreach ($auction as $item)
                                         <tr class="content">
                                             <td>{{ $item->id }}</td>
-                                            <td>{{ $item->PlatformName }}</td>
+                                            <td>{{ $item->Title }}</td>
                                             <td> @if ($item->Region =='riyadh' )
                                                     {{"الرياض"}}
                                                 @elseif ($item->Region =='makka')
@@ -182,7 +189,8 @@
                                                     {{"المنطقة الشمالية"}}
                                                 @elseif ($item->Region =='asser')
                                                     {{"عسير "}}
-                                                @endif</td>
+                                                @endif
+                                            </td>
                                             <td>@if ($item->type == "onsite")
                                                     {{"حضوري"}}
                                                 @elseif ($item->type == "online")
@@ -190,41 +198,45 @@
                                                 @elseif ($item->type == "mixed")
                                                     {{"هجين"}}
                                                 @endif</td>
-                                            <td>{{ $item->Title }}</td>
-                                            <td>{{ $item->dateOfStarting }} / {{ $item->timeOfStarting }}</td>
-                                            <td>{{ $item->ShowInfath }}</td>
-
-
-                                            {{--                                            <td>--}}
-                                            {{--                                                <a href="{{ url('auctionitem/'.$item->id) }}"--}}
-                                            {{--                                                   class="btn btn-primary btn-sm"> المحتوى</a>--}}
-
-                                            {{--                                            </td>--}}
+                                            <td>{{ $item->companyName }}</td>
+                                            <td>{{ $item->infoDetails }}</td>
+                                            <td>{{ $item->numberOfVisits }}</td>
+                                            {{-- Todo ==> add number of visits & number of registers --}}
+                                            <td>{{ $item->remaining_days }}</td>
+                                            <td>{{ $item->userLogs()->count() }}</td>
                                             <td>
                                                 <a href="{{ url('edit_auction/'.$item->id) }}"
                                                    class="btn btn-primary btn-sm">تعديل</a>
-
                                             </td>
                                             <td>
-                                                <a href="{{ url('userlog/'.$item->id) }}" class="btn btn-primary btn-sm">سجل
-                                                    المشتركين</a>
-
-                                            </td>
-                                            {{--                                            <td>{{ $item->AuctionUserLogs->count() }}</td>--}}
-                                            <td>
-                                                <a href="{{ url('reminderindex/'.$item->id) }}" class="btn btn-primary btn-sm">سجل
-                                                    المشتركين بالتذكير</a>
-
-                                            </td>
-                                            <td>
-                                                {{-- <a href="{{ url('delete-student/'.$item->id) }}"
-                                                    class="btn btn-danger btn-sm">Delete</a> --}}
                                                 <form action="{{ url('delete_auction/'.$item->id) }}" method="POST">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger btn-sm">حذف</button>
                                                 </form>
                                             </td>
+                                            {{--                                            <td>{{ $item->Title }}</td>--}}
+                                            {{--                                            <td>{{ $item->dateOfStarting }} / {{ $item->timeOfStarting }}</td>--}}
+                                            {{--                                            <td>{{ $item->ShowInfath }}</td>--}}
+
+
+                                            {{--                                            <td>--}}
+                                            {{--                                                <a href="{{ url('auctionitem/'.$item->id) }}"--}}
+                                            {{--                                                   class="btn btn-primary btn-sm"> المحتوى</a>--}}
+                                            {{--                                            </td>--}}
+
+                                            {{--                                            <td>--}}
+                                            {{--                                                <a href="{{ url('userlog/'.$item->id) }}" class="btn btn-primary btn-sm">سجل--}}
+                                            {{--                                                    المشتركين</a>--}}
+
+                                            {{--                                            </td>--}}
+                                            {{--                                            --}}{{--                                            <td>{{ $item->AuctionUserLogs->count() }}</td>--}}
+                                            {{--                                            <td>--}}
+                                            {{--                                                <a href="{{ url('reminderindex/'.$item->id) }}" class="btn btn-primary btn-sm">سجل--}}
+                                            {{--                                                    المشتركين بالتذكير</a>--}}
+
+                                            {{--                                            </td>--}}
+
                                         </tr>
                                     @endforeach
                                     </tbody>

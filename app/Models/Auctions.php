@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Auctions extends Model
 {
@@ -25,18 +26,42 @@ class Auctions extends Model
         'timeOfStarting',
         'link',
         'onsiteLink',
-        //  'timeOfEnding',
+        'timeOfEnding',
         'dateOfEnding',
         'nowdate',
         'slug',
-
+        'companyName',
+        'infoDetails',
+        'numberOfVisits'
     ];
+
+    public function getRemainingDaysAttribute()
+    {
+        // Get the current date and time
+        $now = Carbon::now();
+
+        // Get the end date of the event
+        $endDate = Carbon::parse($this->attributes['dateOfEnding']);
+
+        if ($now > $endDate) {
+            return 'منتهى';
+        }
+        // Calculate the difference in days
+        $remainingDays = $endDate->diffInDays($now);
+
+        // Return the remaining days
+        return $remainingDays;
+    }
+
+    // Relations
+    public function userLogs(): HasMany
+    {
+        return $this->hasMany(UserLog::class, 'auction_id');
+    }
 
     public function acution_item()
     {
         return $this->hasMany(AcutionItems::class, 'Acution_id', 'id');
-
-
     }
 
     public function reminders()
@@ -46,12 +71,6 @@ class Auctions extends Model
 
     }
 
-    public function AuctionUserLogs()
-    {
-        return $this->hasMany(userLog::class, 'Acution_id', 'id');
-
-
-    }
 
     // Query Scope
     public function scopeFilter(Builder $query, array $filters)

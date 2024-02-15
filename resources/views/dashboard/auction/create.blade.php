@@ -117,7 +117,23 @@
                                             <label for="">وقت البداية</label>
                                             <input type="time" name="timeOfStarting" value="{{ old('timeOfStarting') }}" class="form-control">
                                         </div>
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                        <div class="form-group mb-3">
+                                            <label for="">وقت النهاية</label>
+                                            <input type="time" name="timeOfEnding" value="{{ old('timeOfEnding') }}" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <label for="">اسم الشركة</label>
+                                        <input type="text" name="companyName" value="{{ old('companyName') }}" class="form-control">
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label for="">معلومات التواصل</label>
+                                        <input type="text" name="infoDetails" value="{{ old('infoDetails') }}" class="form-control">
                                     </div>
                                 </div>
 
@@ -154,18 +170,18 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="text-center"> ----------------------------------------- محتوي المزاد
-                                    --------------------------------</p>
-                                <div class="row">
-                                    <div class="mb-3 col-md-6">
-                                        <label for="">اسم القطعة </label>
-                                        <input type="text" name="auctionItemName" class="form-control">
-                                    </div>
-                                    <div class="mb-3 col-md-6">
-                                        <label for=""> المساحة</label>
-                                        <input type="text" name="auctionItemSpace" class="form-control">
-                                    </div>
-                                </div>
+                                {{--  <p class="text-center"> ----------------------------------------- محتوي المزاد
+                                      --------------------------------</p>
+                                  <div class="row">
+                                      <div class="mb-3 col-md-6">
+                                          <label for="">اسم القطعة </label>
+                                          <input type="text" name="auctionItemName" class="form-control">
+                                      </div>
+                                      <div class="mb-3 col-md-6">
+                                          <label for=""> المساحة</label>
+                                          <input type="text" name="auctionItemSpace" class="form-control">
+                                      </div>
+                                  </div>--}}
                                 <div class="form-group mb-3">
                                     <button type="submit" class="btn btn-primary">اضف</button>
                                 </div>

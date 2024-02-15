@@ -35,6 +35,11 @@ class FrontendController extends Controller
     {
         $auction = Auctions::where('slug', $slug)->first();
 
+        $numberOfVisits = $auction->numberOfVisits;
+        $auction->update([
+            'numberOfVisits' => $numberOfVisits + 1
+        ]);
+
         return view('auction-details', compact('auction'));
     }
 
