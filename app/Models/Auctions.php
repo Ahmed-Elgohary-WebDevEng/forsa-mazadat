@@ -56,7 +56,7 @@ class Auctions extends Model
     // Relations
     public function userLogs(): HasMany
     {
-        return $this->hasMany(UserLog::class, 'auction_id');
+        return $this->hasMany(UserLog::class, 'Acution_id');
     }
 
     public function acution_item()
