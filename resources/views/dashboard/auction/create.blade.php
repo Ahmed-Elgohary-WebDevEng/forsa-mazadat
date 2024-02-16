@@ -82,7 +82,7 @@
                                         <label for=""> المنطقة</label>
                                         <div class="input-group mb-3">
                                             <select class="form-select" aria-label="Default select example" name="Region">
-                                                <option value="all">الكل</option>
+                                                <option value="">الكل</option>
                                                 <option value="riyadh">الرياض</option>
                                                 <option value="makka">مكة المكرمة</option>
                                                 <option value="almadina">المدينة المنورة</option>

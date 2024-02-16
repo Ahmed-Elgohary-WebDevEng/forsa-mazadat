@@ -38,7 +38,7 @@ class AuctionsController extends Controller
             'timeOfStarting' => 'required',
             'dateOfEnding' => 'required',
             'image' => 'required',
-            'timeOeEnding' => 'required',
+            'timeOfEnding' => 'required',
             'companyName' => 'required'
         ]);
 
@@ -137,7 +137,7 @@ class AuctionsController extends Controller
             'companyName' => 'required'
         ]);
 
-        $filenameImg = '';
+        $filenameImg = $auction->image;
         if ($request->hasfile('image')) {
             $destination = 'uploads/auction/'.$request->image;
             if (File::exists($destination)) {
@@ -149,7 +149,7 @@ class AuctionsController extends Controller
             $file->move('uploads/auction/', $filenameImg);
         }
 
-        $platformImg = '';
+        $platformImg = $auction->PlatformImage;
         if ($request->hasfile('PlatformImage')) {
             $destination = 'uploads/auction/'.$request->PlatformImage;
             if (File::exists($destination)) {
