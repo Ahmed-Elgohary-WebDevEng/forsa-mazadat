@@ -161,8 +161,12 @@
                                     <tbody id="myTable">
                                     @foreach ($auction as $item)
                                         <tr class="content">
-                                            <td>{{ $item->id }}</td>
-                                            <td>{{ $item->Title }}</td>
+                                            <td>
+                                                <a href="{{ route('auctions-items.index', $item->id) }}">{{ $item->id }}</a>
+                                            </td>
+                                            <td>
+                                                <a href="{{ route('auctions-items.index', $item->id) }}">{{ $item->Title }}</a>
+                                            </td>
                                             <td> @if ($item->Region =='riyadh' )
                                                     {{"الرياض"}}
                                                 @elseif ($item->Region =='makka')
@@ -198,8 +202,8 @@
                                                 @elseif ($item->type == "mixed")
                                                     {{"هجين"}}
                                                 @endif</td>
-                                            <td>{{ $item->companyName }}</td>
-                                            <td>{{ $item->infoDetails }}</td>
+                                            <td>{{ $item->company->name ?? 'لا يوجد' }}</td>
+                                            <td>{{ $item->company->info_details ?? 'لا توجد' }}</td>
                                             <td>{{ $item->numberOfVisits }}</td>
                                             {{-- Todo ==> add number of visits & number of registers --}}
                                             <td>{{ $item->remaining_days }}</td>

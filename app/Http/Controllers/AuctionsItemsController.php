@@ -4,92 +4,116 @@ namespace App\Http\Controllers;
 
 use App\Models\AcutionItems;
 use App\Models\Auctions;
-use \Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 
 class AuctionsItemsController extends Controller
 {
     public function index($id)
     {
-        $Actionitems = AcutionItems::all();
-        $Auction = Auctions::findOrFail($id);
-        
+        $auction = Auctions::findOrFail($id);
 
-        return view('dashboard.auctionItem.index', compact('Actionitems', 'Auction'));
-    }
+        $auction_items_details = $auction->acutionItems()->get();
 
-    public function create($id)
-    {
-        $Auction = Auctions::findOrFail($id);
-
-        return view('dashboard.auctionItem.create',compact('Auction'));
+        return view('dashboard.auctionItem.index', compact('auction_items_details', 'auction'));
     }
 
     public function store(Request $request, $id)
     {
-        
-        $Auction = Auctions::findOrFail($id);
+        $request->validate([
+            'name' => 'required|string',
+            'space' => 'required',
+            'image' => 'required|image'
+        ]);
 
-        $Actionitem = new AcutionItems;
-       
-        $Actionitem->name = $request->name;
-        $Actionitem->location = $request->location;
-        $Actionitem->descripton = $request->descripton;
-        $Actionitem->space = $request->space;
-        $Actionitem->maxPrice = $request->maxPrice;
-        $Actionitem->lowPrice = $request->lowPrice;
-        $Actionitem->width = $request->width;
-        $Actionitem->length = $request->length;
-        $Actionitem->slug = Str::slug($request->slug);
+        $auction = Auctions::findOrFail($id);
+
+        $auction_item_img = '';
+        if ($request->hasfile('image')) {
+            $destination = 'uploads/auction-items/'.$request->image;
+            if (File::exists($destination)) {
+                File::delete($destination);
+            }
+            $file = $request->file('image');
+            $extention = $file->getClientOriginalExtension();
+            $auction_item_img = time().'.'.$extention;
+            $file->move('uploads/auction-items/', $auction_item_img);
+        }
+
+        $auction->acutionItems()->create([
+            'name' => $request->input('name'),
+            'slug' => Str::slug($request->input('name')),
+            'space' => $request->input('space'),
+            'item_image' => $auction_item_img
+        ]);
 
 
-        $Auction->acution_item()->save($Actionitem);
-        return redirect()->route('auctionitem', $Auction);
-
-
-       // return view('dashboard.auctionItem.create',compact('Auction'))->with('status','تمت إضافة المزاد بنجاح');
+        return redirect()->route('auctions-items.index', $auction->id)->with('status', 'تم اضافة تفاصيل المزاد بنجاح');
     }
 
-    public function edit($id, $auctionId)
+    public function create($id)
     {
-        $Auction = Auctions::findOrFail($auctionId);
-        $Auctions = Auctions::all();
-        $Actionitems = AcutionItems::findOrFail($id);
-        return view('dashboard.auctionItem.edit', compact('Actionitems','Auction','Auctions'));
+        $auction = Auctions::findOrFail($id);
+
+        return view('dashboard.auctionItem.create', compact('auction'));
     }
 
-    public function update(Request $request, $Acutionitem_id,$auctionId)
+    public function edit($auctionId, $id)
     {
-        $Auction = Auctions::findOrFail($auctionId);
+        $auction = Auctions::findOrFail($auctionId);
+        $auction_item = $auction->acutionItems()->findOrFail($id);
 
-        $Actionitems = $Auction->acution_item()->where('id',$Acutionitem_id)->first();
+        return view('dashboard.auctionItem.edit', compact('auction_item', 'auction'));
+    }
 
-        $Actionitems->name = $request->name;
-        $Actionitems->location = $request->location;
-        $Actionitems->descripton = $request->descripton;
-        $Actionitems->space = $request->space;
-        $Actionitems->maxPrice = $request->maxPrice;
-        $Actionitems->lowPrice = $request->lowPrice;
-        $Actionitems->width = $request->width;
-        $Actionitems->length = $request->length;
-        $Actionitems->slug = Str::slug($request->slug);
-
-        //$Auction->acution_item()->update($Actionitems);
-        $Actionitems->update();
-        return redirect()->route('auctionitem', $Auction);
-
-       // return redirect()->back()->with('status',' Updated Successfully');
-       //return back();
-
-
-}
-public function destroy($id)
+    public function update(Request $request, $auctionId, $id)
     {
-        
-        $Actionitems = AcutionItems::find($id);
-        $Actionitems->delete();
-        return redirect()->back()->with('status','kid Deleted Successfully');
+        $request->validate([
+            'name' => 'required|string',
+            'space' => 'required',
+        ]);
+
+        $auction = Auctions::findOrFail($auctionId);
+        $updated_item = $auction->acutionItems()->findOrFail($id);
+
+        // upload image
+        $updated_item_img = $updated_item->item_image;
+        if ($request->hasfile('image')) {
+            $request->validate([
+                'image' => 'image'
+            ]);
+            $destination = 'uploads/auction-items/'.$request->image;
+            if (File::exists($destination)) {
+                File::delete($destination);
+            }
+            $file = $request->file('image');
+            $extention = $file->getClientOriginalExtension();
+            $updated_item_img = time().'.'.$extention;
+            $file->move('uploads/auction-items/', $updated_item_img);
+        }
+
+        $updated_item->update([
+            'name' => $request->input('name'),
+            'slug' => Str::slug($request->input('name')),
+            'space' => $request->input('space'),
+            'item_image' => $updated_item_img
+        ]);
+
+        return redirect()->route('auctions-items.index', $auction->id)->with('status', 'تم تعديل تفاصيل المزاد بنجاح');
+    }
+
+    public function destroy($id)
+    {
+        $auction_item = AcutionItems::find($id);
+
+        $destination = 'uploads/auction-items/'.$auction_item->item_image;
+        if (File::exists($destination)) {
+            File::delete($destination);
+        }
+
+        $auction_item->delete();
+        return redirect()->back()->with('status', 'تم حذف تفاصيل المزاد بنجاح');
     }
 
 }

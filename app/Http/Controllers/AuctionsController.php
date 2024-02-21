@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Auctions;
+use App\Models\Company;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -39,7 +40,8 @@ class AuctionsController extends Controller
             'dateOfEnding' => 'required',
             'image' => 'required',
             'timeOfEnding' => 'required',
-            'companyName' => 'required'
+            'company_id' => 'required|numeric',
+            'pdf_link' => 'required'
         ]);
 
         $filenameImg = '';
@@ -89,19 +91,9 @@ class AuctionsController extends Controller
                 'PlatformImage' => $platformImg,
                 // added new
                 'timeOfEnding' => $request->timeOfEnding,
-                'companyName' => $request->companyName,
-                'infoDetails' => $request->infoDetails
+                'company_id' => (int) $request->company_id,
+                'pdf_link' => $request->pdf_link
             ]);
-
-//        dd($updatedAuction);
-
-            // 2- create auction item using auction data
-
-//            $createdAuction->acution_item()->create([
-//                'name' => $request->auctionItemName,
-//                'space' => $request->auctionItemSpace,
-//                'slug' => Str::slug($createdAuction->Title)
-//            ]);
         });
 
         return redirect()->to('auction')->with('status', 'تمت إضافة المزاد بنجاح');
@@ -109,13 +101,16 @@ class AuctionsController extends Controller
 
     public function create()
     {
-        return view('dashboard.auction.create');
+        $companies = Company::select('id', 'name')->get();
+        return view('dashboard.auction.create', compact('companies'));
     }
 
     public function edit($id)
     {
         $auction = Auctions::findOrFail($id);
-        return view('dashboard.auction.edit', compact('auction'));
+        $companies = Company::select('id', 'name')->where('id', '!=', $auction->company_id)->get();
+
+        return view('dashboard.auction.edit', compact('auction', 'companies'));
     }
 
     public function update(Request $request, $id)
@@ -134,7 +129,8 @@ class AuctionsController extends Controller
             'timeOfStarting' => 'required',
             'timeOfEnding' => 'required',
             'dateOfEnding' => 'required',
-            'companyName' => 'required'
+            'company_id' => 'required|numeric',
+            'pdf_link' => 'required'
         ]);
 
         $filenameImg = $auction->image;
@@ -180,14 +176,11 @@ class AuctionsController extends Controller
             'PlatformImage' => $platformImg,
             // added new
             'timeOfEnding' => $request->timeOfEnding,
-            'companyName' => $request->companyName,
-            'infoDetails' => $request->infoDetails
+            'company_id' => (int) $request->company_id,
+            'pdf_link' => $request->pdf_link
         ]);
 
-
         return redirect()->back()->with('status', ' تم تحديث المزاد بنجاح');
-
-
     }
 
     public function destroy($id)

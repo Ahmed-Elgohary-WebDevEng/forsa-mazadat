@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use App\Models\UserLog;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -22,8 +21,10 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        UserLog::factory(10)->create([
-            'auction_id' => 559
-        ]);
+//        UserLog::factory(10)->create([
+//            'auction_id' => 559
+//        ]);
+
+//        Company::factory(5)->create();
     }
 }

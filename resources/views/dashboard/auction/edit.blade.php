@@ -168,12 +168,20 @@
 
                                     <div class="row">
                                         <div class="mb-3 col-md-6">
-                                            <label for="">اسم الشركة</label>
-                                            <input type="text" name="companyName" value="{{ $auction->companyName }}" class="form-control">
-                                        </div>
-                                        <div class="mb-3 col-md-6">
-                                            <label for="">معلومات التواصل</label>
-                                            <input type="text" name="infoDetails" value="{{ $auction->infoDetails }}" class="form-control">
+                                            <label for="">الشركة التابع لها المزاد</label>
+                                            <div class="input-group mb-3">
+                                                <select class="form-select" aria-label="Default select example" name="company_id" style="max-height: 250px; overflow-y: scroll">
+                                                    @if($auction->company === null)
+                                                        <option value="" selected>اختر الشركة</option>
+                                                    @else
+
+                                                        <option value="{{ $auction->company->id }}" selected>{{ $auction->company->name }}</option>
+                                                    @endif
+                                                    @foreach($companies as $item)
+                                                        <option value="{{ $item->id }}">{{ $item->name }}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -188,6 +196,12 @@
                                         <div class="mb-3 col-md-6">
                                             <label for="">رابط المزاد</label>
                                             <input type="url" name="link" value="{{ $auction->link }}" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-3 col-md-6">
+                                            <label for="">رابط كتيب المزاد</label>
+                                            <input type="url" name="pdf_link" value="{{ $auction->pdf_link }}" class="form-control">
                                         </div>
                                     </div>
                                     <div class="row">

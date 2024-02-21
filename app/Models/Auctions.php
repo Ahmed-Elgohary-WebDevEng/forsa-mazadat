@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Auctions extends Model
@@ -30,9 +31,9 @@ class Auctions extends Model
         'dateOfEnding',
         'nowdate',
         'slug',
-        'companyName',
-        'infoDetails',
-        'numberOfVisits'
+        'company_id',
+        'numberOfVisits',
+        'pdf_link'
     ];
 
     public function getRemainingDaysAttribute()
@@ -59,7 +60,12 @@ class Auctions extends Model
         return $this->hasMany(UserLog::class, 'Acution_id');
     }
 
-    public function acution_item()
+    public function company(): BelongsTo
+    {
+        return $this->belongsTo(Company::class, 'company_id');
+    }
+
+    public function acutionItems()
     {
         return $this->hasMany(AcutionItems::class, 'Acution_id', 'id');
     }

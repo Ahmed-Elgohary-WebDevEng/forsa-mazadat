@@ -4,10 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class AcutionItems extends Model
 {
     use HasFactory;
+
     protected $table = 'acution_items';
     protected $fillable = [
         'Acution_id',
@@ -20,9 +22,11 @@ class AcutionItems extends Model
         'width',
         'length',
         'slug',
+        'item_image'
     ];
-    public function Acution()
+
+    public function auction(): BelongsTo
     {
-        return $this->belongsTo(Auctions::class,'Acution_id','id');
+        return $this->belongsTo(Auctions::class, 'Acution_id', 'id');
     }
 }

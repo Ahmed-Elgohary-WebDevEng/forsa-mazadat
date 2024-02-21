@@ -128,12 +128,15 @@
 
                                 <div class="row">
                                     <div class="mb-3 col-md-6">
-                                        <label for="">اسم الشركة</label>
-                                        <input type="text" name="companyName" value="{{ old('companyName') }}" class="form-control">
-                                    </div>
-                                    <div class="mb-3 col-md-6">
-                                        <label for="">معلومات التواصل</label>
-                                        <input type="text" name="infoDetails" value="{{ old('infoDetails') }}" class="form-control">
+                                        <label for="">الشركة التابع لها المزاد</label>
+                                        <div class="input-group mb-3">
+                                            <select class="form-select" aria-label="Default select example" name="company_id" style="max-height: 250px; overflow-y: scroll">
+                                                <option value="" selected>اختر الشركة</option>
+                                                @foreach($companies as $item)
+                                                    <option value="{{ $item->id }}">{{ $item->name }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -148,6 +151,12 @@
                                     <div class="mb-3 col-md-6">
                                         <label for="">رابط المزاد</label>
                                         <input type="url" name="link" value="{{ old('link') }}" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <label for="">رابط كتيب المزاد</label>
+                                        <input type="url" name="pdf_link" value="{{ old('pdf_link') }}" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row">

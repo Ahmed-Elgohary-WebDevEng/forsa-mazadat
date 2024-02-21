@@ -25,6 +25,7 @@ class FrontendController extends Controller
 
         $auctions = Auctions::filter(request(['region', 'type', 'date']))
             ->orderBy('dateOfStarting', 'desc')
+            ->with('acutionItems', 'company')
             ->paginate(6)
             ->withQueryString();
 
@@ -33,7 +34,7 @@ class FrontendController extends Controller
 
     public function showAuctionDetails($slug)
     {
-        $auction = Auctions::where('slug', $slug)->first();
+        $auction = Auctions::where('slug', $slug)->with('acutionItems', 'company')->first();
 
         $numberOfVisits = $auction->numberOfVisits;
         $auction->update([

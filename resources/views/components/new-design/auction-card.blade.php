@@ -1,6 +1,8 @@
 @props(['item', 'key'])
 
-@php use Carbon\Carbon; @endphp
+@php
+    use Carbon\Carbon;
+@endphp
 <div class="col">
     <div class="card h-100 auction-card">
         <div class="d-flex flex-column auction-card__type">
@@ -71,7 +73,7 @@
                         <i
                             class="bx bxs-book-bookmark fs-4 shadow-sm p-1 bg-white"
                         ></i>
-                        <span class="text-light-blue h6 fw-semibold my-auto">8 أصول</span>
+                        <span class="text-light-blue h6 fw-semibold my-auto">{{ $item->acutionItems()->count() }} أصول</span>
                     </div>
                     <a href="#" class="link">
                         <i class="bx bxs-location-plus fs-4 shadow-sm p-1 bg-white"></i>
@@ -116,25 +118,40 @@
                             class="bx bx-calendar fs-4 shadow-sm p-1 bg-white"
                             style="color: #da4a43"
                         ></i>
+                        @php
+
+                            // Assuming $date contains your date string or Carbon instance
+                            $date = Carbon::parse($item->dateOfStarting);
+
+                            // Set the locale to Arabic
+                            Carbon::setLocale('ar');
+
+                            // Get the name of the day in Arabic
+                            $dayName = $date->translatedFormat('l');
+                        @endphp
                         <div
                             class="text-light-blue fw-normal my-auto d-flex flex-column"
                             style="font-size: 12px; letter-spacing: 1px"
                         >
-                            <span>يبدأ الإثنين {{ Carbon::parse($item->timeOfStarting)->format('g:i A') }}</span>
+                            <span>يبدأ {{ $dayName }} {{ Carbon::parse($item->timeOfStarting)->format('g:i A') }}</span>
                             <span>{{ Carbon::parse($item->dateOfStarting)->format('Y-m-d') }}</span>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="d-flex flex-column text-md-end auction-card__owner shadow"
-                >
-                    <img
-                        class="img-thumbnail"
-                        src="https://st2.depositphotos.com/4035913/6124/i/600/depositphotos_61243733-stock-illustration-business-company-logo.jpg"
-                        alt=""
-                    />
-                    <span class="text-dark-gray my-1 fw-semibold text-center" style="font-size: 10px">مجموعة الوميض العقارية</span>
-                </div>
+
+                @if($item->company)
+                    <div
+                        class="d-flex flex-column text-md-end auction-card__owner shadow"
+                    >
+
+                        <img
+                            class="img-thumbnail"
+                            src="{{  asset('uploads/company/' . $item->company->logo) }}"
+                            alt=""
+                        />
+                        <span class="text-dark-gray my-1 fw-semibold text-center" style="font-size: 10px">{{ substr($item->company->name, 0, 20) }}</span>
+                    </div>
+                @endif
             </div>
         </div>
     </div>
