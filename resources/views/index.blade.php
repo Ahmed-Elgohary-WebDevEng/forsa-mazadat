@@ -59,35 +59,7 @@
                 @endif
             </div>
             <div class="col-lg-2">
-                <div
-                    class="row justify-content-center align-items-center"
-                    style="overflow-y: hidden; height: 500px"
-                >
-                    <div class="row auction-offer flex-lg-column">
-                        {{--  Auction Offer  --}}
-                        <div
-                            class="offer-card rounded-4 py-1 fs-6 fw-semibold text-center"
-                        >
-                            <span>فئة سكنية</span>
-                            <span>910 م</span>
-                            <span>حى النرجس</span>
-                        </div>
-                        <div
-                            class="offer-card rounded-4 py-1 fs-6 fw-semibold text-center"
-                        >
-                            <span>فئة سكنية</span>
-                            <span>910 م</span>
-                            <span>حى النرجس</span>
-                        </div>
-                        <div
-                            class="offer-card rounded-4 py-1 fs-6 fw-semibold text-center"
-                        >
-                            <span>فئة سكنية</span>
-                            <span>910 م</span>
-                            <span>حى النرجس</span>
-                        </div>
-                    </div>
-                </div>
+                <x-new-design.offers-sidebar-banner/>
             </div>
         </div>
     </div>

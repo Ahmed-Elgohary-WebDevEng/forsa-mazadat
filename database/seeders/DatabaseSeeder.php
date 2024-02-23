@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Offer;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -26,5 +27,7 @@ class DatabaseSeeder extends Seeder
 //        ]);
 
 //        Company::factory(5)->create();
+
+        Offer::factory(10)->create();
     }
 }

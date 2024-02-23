@@ -31,29 +31,39 @@
                     </a>
                 </div>
             </li>
-            {{-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-                    <i class="flaticon-025-dashboard"></i>
-                    <span class="nav-text">لوحة التحكم</span>
-                </a>
-                <ul aria-expanded="false">
-                    <li><a href="{{ route('user/table') }}">  إدارة المستخدمين</a></li>
-                </ul>
-            </li> --}}
-
-            <ul aria-expanded="false">
-                <li><a href="{{ url('stakeholder') }}">
-                        <i class="fas fa-star"></i>
-                        <span class="nav-text">شركاء النجاح</span>
-
-                    </a></li>
-            </ul>
             <ul aria-expanded="false">
                 <li><a href="{{ url('agents') }}">
                         <i class="fas fa-star"></i>
-                        <span class="nav-text">الوكلاء </span>
+                        <span class="nav-text">البنرات </span>
 
                     </a></li>
             </ul>
+            <ul aria-expanded="false">
+                <li><a href="{{ url('stakeholder') }}">
+                        <i class="fas fa-star"></i>
+                        <span class="nav-text">الشركاء</span>
+
+                    </a></li>
+            </ul>
+
+            <ul aria-expanded="false">
+                <li>
+                    <a href="{{ route('userlogall') }}">
+                        <i class="flaticon-017-clipboard"></i>
+                        <span class="nav-text">المشتركين بالمزاد </span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul aria-expanded="false">
+                <li>
+                    <a href="{{ route('offers.index') }}">
+                        <i class="flaticon-Auction"><img src="{{asset('assets/images/offer-icon.png')}}" width="22" alt=""></i>
+                        <span class="nav-text">العرروض المميزة</span>
+                    </a>
+                </li>
+            </ul>
+
             <ul aria-expanded="false">
                 <li>
                     <a href="{{ route('user/table')}}">
@@ -62,14 +72,7 @@
                     </a>
                 </li>
             </ul>
-            <ul aria-expanded="false">
-                <li>
-                    <a href="{{ route('userlogall') }}">
-                        <i class="flaticon-017-clipboard"></i>
-                        <span class="nav-text">سجلات المشتركين بالمزاد </span>
-                    </a>
-                </li>
-            </ul>
+
 
             {{-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
                    <i class="flaticon-025-dashboard"></i>
@@ -91,7 +94,7 @@
             <ul aria-expanded="false">
                 <li>
                     <a href="{{ url('auction') }}">
-                        <i class="flaticon-Auction"><img src="{{asset('assets/images/auction2.png')}}" width="30" alt=""></i>
+                        <i class="flaticon-Auction"><img src="{{asset('assets/images/auction2.png')}}" width="20" alt=""></i>
                         <span class="nav-text"> كل المزادات </span>
                     </a>
                 </li>
@@ -100,7 +103,7 @@
             <ul aria-expanded="false">
                 <li>
                     <a href="{{ route('companies.index') }}">
-                        <i class="flaticon-Auction"><img src="{{asset('assets/images/company-icon.png')}}" width="30" alt=""></i>
+                        <i class="flaticon-Auction"><img src="{{asset('assets/images/company-icon.png')}}" width="22" alt=""></i>
                         <span class="nav-text">الشركات</span>
                     </a>
                 </li>

@@ -24,7 +24,8 @@ class AuctionsItemsController extends Controller
         $request->validate([
             'name' => 'required|string',
             'space' => 'required',
-            'image' => 'required|image'
+            'image' => 'required|image',
+            'location' => 'required|url'
         ]);
 
         $auction = Auctions::findOrFail($id);
@@ -45,7 +46,8 @@ class AuctionsItemsController extends Controller
             'name' => $request->input('name'),
             'slug' => Str::slug($request->input('name')),
             'space' => $request->input('space'),
-            'item_image' => $auction_item_img
+            'item_image' => $auction_item_img,
+            'location' => $request->input('location')
         ]);
 
 
@@ -72,6 +74,7 @@ class AuctionsItemsController extends Controller
         $request->validate([
             'name' => 'required|string',
             'space' => 'required',
+            'location' => 'required|url'
         ]);
 
         $auction = Auctions::findOrFail($auctionId);
@@ -97,7 +100,8 @@ class AuctionsItemsController extends Controller
             'name' => $request->input('name'),
             'slug' => Str::slug($request->input('name')),
             'space' => $request->input('space'),
-            'item_image' => $updated_item_img
+            'item_image' => $updated_item_img,
+            'location' => $request->input('location')
         ]);
 
         return redirect()->route('auctions-items.index', $auction->id)->with('status', 'تم تعديل تفاصيل المزاد بنجاح');

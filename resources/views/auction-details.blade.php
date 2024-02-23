@@ -46,7 +46,7 @@
                                     </h5>
                                 </div>
                                 <div class="row mb-1 mt-2">
-                                    <p class="fw-semibold small text-blue"> {{ $auction->company->description }}</p>
+                                    <p class="fw-semibold small text-blue"> {{ substr($auction->company->description, 0, 300) }}</p>
                                 </div>
                             @else
                                 <h6 class="text-dark-gray text-center fw-semibold py-5">لا توجد شركة</h6>
@@ -80,7 +80,7 @@
                             class="d-flex flex-row justify-content-evenly gap-3 flex-wrap"
                         >
                             <a href="{{ $auction->pdf_link ?? "#" }}" target="_blank" class="auction-tag flex-grow-1 text-blue">
-                                <span class="small fw-normal me-2">كتيب مزاد الأصالة</span>
+                                <span class="small fw-normal me-2">كتيب {{ $auction->Title }}</span>
                                 <img src="{{ asset('new-template/src/assets/icons/pdficon.png') }}" alt="pdf"/>
                             </a>
                             <a
@@ -216,47 +216,32 @@
                         </div>
                     </div>
                 </div>
+
+                {{--      Images auction       --}}
+                <div class="row g-3 mb-2 mt-4 align-items-center justify-content-center flex-wrap">
+                    @if(count($auction->acutionItems) > 0)
+                        @foreach($auction->acutionItems as $item)
+                            <div style="width: fit-content;">
+                                <a href="{{ $item->location ? $item->location : '#' }}" target="_blank">
+                                    <img
+                                        class="rounded-4 rounded object-fit-cover"
+                                        style="height: 200px; width: 250px;"
+                                        src="{{ $item->item_image ? asset('uploads/auction-items/' . $item->item_image) : asset('assets/images/image-not-found.jpg') }}"
+                                        alt="logo"
+                                        loading="lazy"
+                                    >
+                                </a>
+                            </div>
+                        @endforeach
+                    @else
+                        <h5 class="fw-semibold text-center text-danger">لا توجد صور</h5>
+                    @endif
+                </div>
+
+
             </div>
             <div class="col-lg-2">
-                <div class="row justify-content-center align-items-center" style="overflow-y: hidden">
-                    <div class="row auction-offer flex-lg-column">
-                        <div
-                            class="offer-card rounded-4 py-1 fs-6 fw-semibold text-center"
-                        >
-                            <span>فئة سكنية</span>
-                            <span>910 م</span>
-                            <span>حى النرجس</span>
-                        </div>
-                        <div
-                            class="offer-card rounded-4 py-1 fs-6 fw-semibold text-center"
-                        >
-                            <span>فئة سكنية</span>
-                            <span>910 م</span>
-                            <span>حى النرجس</span>
-                        </div>
-                        <div
-                            class="offer-card rounded-4 py-1 fs-6 fw-semibold text-center"
-                        >
-                            <span>فئة سكنية</span>
-                            <span>910 م</span>
-                            <span>حى النرجس</span>
-                        </div>
-                        <div
-                            class="offer-card rounded-4 py-1 fs-6 fw-semibold text-center"
-                        >
-                            <span>فئة سكنية</span>
-                            <span>910 م</span>
-                            <span>حى النرجس</span>
-                        </div>
-                        <div
-                            class="offer-card rounded-4 py-1 fs-6 fw-semibold text-center"
-                        >
-                            <span>فئة سكنية</span>
-                            <span>910 م</span>
-                            <span>حى النرجس</span>
-                        </div>
-                    </div>
-                </div>
+                <x-new-design.offers-sidebar-banner/>
             </div>
         </div>
     </div>

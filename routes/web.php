@@ -7,6 +7,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\OfferController;
 use App\Http\Controllers\ReminderController;
 use App\Http\Controllers\ResetPasswordController;
 use App\Http\Controllers\stakeholderController;
@@ -107,6 +108,7 @@ Route::controller(UserManagementController::class)->group(function () {
 // -------------------------- Company ----------------------//
 Route::middleware('auth')->group(function () {
     Route::resource('companies', CompanyController::class);
+    Route::resource('offers', OfferController::class);
 });
 
 
