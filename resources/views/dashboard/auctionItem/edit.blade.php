@@ -45,6 +45,13 @@
                                             <span class="text-danger fw-semibold">{{ $message }}</span>
                                             @enderror
                                         </div>
+                                        <div class="mb-3 col-md-6">
+                                            <label for=""> رقم الصك</label>
+                                            <input type="number" name="number" class="form-control" value="{{ $auction_item->number }}">
+                                            @error('number')
+                                            <span class="text-danger fw-semibold">{{ $message }}</span>
+                                            @enderror
+                                        </div>
 
                                         <div class="row">
                                             <div class="mb-3 col-md-6">
@@ -57,7 +64,7 @@
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label for="">موقع العقار</label>
-                                                <input type="url" name="location" class="form-control" value="{{ $auction->location }}">
+                                                <input type="url" name="location" class="form-control" value="{{ $auction_item->location }}">
                                                 @error('location')
                                                 <span class="text-danger fw-semibold">{{ $message }}</span>
                                                 @enderror

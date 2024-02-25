@@ -70,7 +70,7 @@ class CompanyController extends Controller
         ]);
 
         // upload image for company
-        $logoImg = '';
+        $logoImg = $company->logo;
         if ($request->hasfile('logo')) {
             $destination = 'uploads/company/'.$request->logo;
             if (File::exists($destination)) {

@@ -22,7 +22,8 @@ class AcutionItems extends Model
         'width',
         'length',
         'slug',
-        'item_image'
+        'item_image',
+        'number'
     ];
 
     public function auction(): BelongsTo

@@ -218,25 +218,82 @@
                 </div>
 
                 {{--      Images auction       --}}
+
                 <div class="row g-3 mb-2 mt-4 align-items-center justify-content-center flex-wrap">
                     @if(count($auction->acutionItems) > 0)
                         @foreach($auction->acutionItems as $item)
-                            <div style="width: fit-content;">
-                                <a href="{{ $item->location ? $item->location : '#' }}" target="_blank">
-                                    <img
-                                        class="rounded-4 rounded object-fit-cover"
-                                        style="height: 200px; width: 250px;"
-                                        src="{{ $item->item_image ? asset('uploads/auction-items/' . $item->item_image) : asset('assets/images/image-not-found.jpg') }}"
-                                        alt="logo"
-                                        loading="lazy"
-                                    >
-                                </a>
+                            <div class="card mb-3 p-0" style="max-width: 80%; background: var(--primary-gray);">
+                                <div class="row g-1">
+                                    <div class="col-md-4 col-xl-2">
+                                        <a href="{{ $item->location ? $item->location : '#' }}" target="_blank">
+                                            <img src="{{ $item->item_image ? asset('uploads/auction-items/' . $item->item_image) : asset('assets/images/image-not-found.jpg') }}" class="img-fluid rounded-start" style="height: 158px;" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-8 col-xl-10">
+                                        <div class="card-body pb-0">
+                                            <h6 class="card-title fw-bold text-blue mb-3">{{ $item->name }} رقم الصك:
+                                                {{ $item->number ? $item->number : '------' }}</h6>
+                                            <p class="card-text text-secondary my-4 small">
+                                                المساحة: {{ $item->space }}</p>
+                                            <p class="fw-semibold small text-blue">
+                                                @if ($auction->Region =='riyadh' )
+                                                    مدينة: الرياض
+                                                @elseif ($auction->Region =='makka')
+                                                    مدينة: مكة المكرمة
+                                                @elseif ($auction->Region =='almadina')
+                                                    مدينة: المدينة المنورة
+                                                @elseif ($auction->Region =='alsharqia')
+                                                    مدينة: المنطقة الشرقية
+                                                @elseif ($auction->Region =='aljuof')
+                                                    مدينة: الجوف
+                                                @elseif ($auction->Region =='tabuk')
+                                                    مدينة: تبوك
+                                                @elseif ($auction->Region =='haael')
+                                                    مدينة: حائل
+                                                @elseif ($auction->Region =='qassim')
+                                                    مدينة: القصيم
+                                                @elseif ($auction->Region =='najran')
+                                                    مدينة: نجران
+                                                @elseif ($auction->Region =='jazan')
+                                                    مدينة: جازان
+                                                @elseif ($auction->Region =='albaha')
+                                                    مدينة: الباحة
+                                                @elseif ($auction->Region =='shmaleah')
+                                                    مدينة: المنطقة الشمالية
+                                                @elseif ($auction->Region =='asser')
+                                                    مدينة: عسير
+                                                @endif
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         @endforeach
                     @else
-                        <h5 class="fw-semibold text-center text-danger">لا توجد صور</h5>
+                        <h5 class="fw-semibold text-center text-danger">لا توجد تفاصيل</h5>
                     @endif
+
+
                 </div>
+                {{-- <div class="row g-3 mb-2 mt-4 align-items-center justify-content-center flex-wrap">
+                     @if(count($auction->acutionItems) > 0)
+                         @foreach($auction->acutionItems as $item)
+                             <div style="width: fit-content;">
+                                 <a href="{{ $item->location ? $item->location : '#' }}" target="_blank">
+                                     <img
+                                         class="rounded-4 rounded object-fit-cover"
+                                         style="height: 200px; width: 250px;"
+                                         src="{{ $item->item_image ? asset('uploads/auction-items/' . $item->item_image) : asset('assets/images/image-not-found.jpg') }}"
+                                         alt="logo"
+                                         loading="lazy"
+                                     >
+                                 </a>
+                             </div>
+                         @endforeach
+                     @else
+                         <h5 class="fw-semibold text-center text-danger">لا توجد صور</h5>
+                     @endif--}}
+                {{--            </div>--}}
 
 
             </div>
