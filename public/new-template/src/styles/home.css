@@ -184,16 +184,15 @@
 }
 
 #company-banner .slider-container {
-    animation: moveToLeft 80s infinite linear;
+    animation: moveToLeft 100s infinite linear;
 }
 
 #company-banner img {
-    max-height: 170px;
-    object-fit: fill;
-    width: 25%;
-    object-position: center;
-    margin-inline: 0;
-    mix-blend-mode: multiply;
+    max-height: 250px;
+    object-fit: cover;
+    width: 34%;
+    /* object-position: center; */
+    margin-inline: 10px;
 }
 
 @keyframes moveToLeft {
@@ -399,9 +398,8 @@
 }
 
 .auction-offer {
-    animation: 10s offerMoveToBottom infinite linear;
-    max-height: 500px;
-
+    animation: 25s offerMoveToBottom infinite linear;
+    max-height: 600px;
     flex-wrap: nowrap;
     width: 100%;
 }
@@ -420,15 +418,15 @@
 
 @media (max-width: 992px) {
     .auction-offer {
-        display: grid;
+        /*display: grid;*/
         animation: none;
-        grid-template-areas: "a a a";
+        /*grid-template-areas: "a a a";*/
         gap: 15px;
         place-items: center;
     }
 
     .auction-offer .offer-card {
-        width: 100%;
+        width: 50%;
     }
 }
 

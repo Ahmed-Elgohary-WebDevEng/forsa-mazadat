@@ -53,6 +53,17 @@
                                         <label for="">الحي</label>
                                         <input type="text" name="area" value="{{ old('area') }}" class="form-control">
                                     </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label for="">الموقع</label>
+                                        <input type="url" name="location" value="{{ old('location') }}" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <label for="">صورة العرض</label>
+                                        <input type="file" name="image" class="form-control">
+                                    </div>
                                 </div>
 
                                 <div class="form-group mb-3">

@@ -88,9 +88,9 @@
                                 target="_blank"
                                 class="auction-tag flex-grow-1 text-dark-gray"
                             >
-                                <span class="small fw-normal me-2 text-dark-gray">منصة المزاد - {{ $auction->company ? substr($auction->company->name, 0, 20) : 'لا يوجد' }}</span>
+                                <span class="small fw-normal me-2 text-dark-gray">{{ $auction->Title }} - {{ $auction->company ? substr($auction->company->name, 0, 20) : 'لا يوجد' }}</span>
                                 <img
-                                    src="{{ $auction->company ? asset('uploads/company/' . $auction->company->logo): "data:image/png;base64,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" }}"
+                                    src="{{ $auction->image ? asset('uploads/auction/'.$auction->image): "data:image/png;base64,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" }}"
                                     alt=""
                                     style="width: 50px; height: 30px; object-fit: cover"
                                 />
@@ -111,7 +111,7 @@
                 </div>
 
                 <div class="row g-3 mt-2 align-items- justify-content-center">
-                    <div class="col-md-3 text-center">
+                    <div class="col-md-3 text-center position-relative">
                         <img
                             class="img-fluid object-fit-cover rounded-4 shadow-sm mx-auto"
                             style="height: 185px"
@@ -225,15 +225,20 @@
                             <div class="card mb-3 p-0" style="max-width: 80%; background: var(--primary-gray);">
                                 <div class="row g-1">
                                     <div class="col-md-4 col-xl-2">
-                                        <a href="{{ $item->location ? $item->location : '#' }}" target="_blank">
+                                        <a href="{{ $item->location ? $item->location : '#' }}" target="_blank" class="position-relative">
                                             <img src="{{ $item->item_image ? asset('uploads/auction-items/' . $item->item_image) : asset('assets/images/image-not-found.jpg') }}" class="img-fluid rounded-start" style="height: 158px;" alt="...">
+                                            <i
+                                                class="bx bxs-location-plus fs-4 me-3 m-0 position-absolute"
+                                                style="color: #f31212; left: -40px; top: calc(50% - 10px);"
+                                            ></i>
                                         </a>
                                     </div>
                                     <div class="col-md-8 col-xl-10">
-                                        <div class="card-body pb-0">
-                                            <h6 class="card-title fw-bold text-blue mb-3">{{ $item->name }} رقم الصك:
-                                                {{ $item->number ? $item->number : '------' }}</h6>
-                                            <p class="card-text text-secondary my-4 small">
+                                        <div class="card-body pb-0 ms-3">
+                                            <h6 class="card-title fw-bold text-blue mb-3">{{ $item->name }}
+                                                - {{ $item->area ? $item->area : '٫٫٫٫٫٫٫' }} - رقم
+                                                الصك: {{ $item->number ? $item->number : '------' }}</h6>
+                                            <p class="card-text text-black my-4 small">
                                                 المساحة: {{ $item->space }}</p>
                                             <p class="fw-semibold small text-blue">
                                                 @if ($auction->Region =='riyadh' )

@@ -54,6 +54,18 @@
                                         <label for="">الحي</label>
                                         <input type="text" name="area" value="{{ $offer->area }}" class="form-control">
                                     </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label for="">الموقع</label>
+                                        <input type="url" name="location" value="{{ $offer->location }}" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <label for="">صورة العرض</label>
+                                        <input type="file" name="image" class="form-control">
+                                        <img class="object-fit-cover img-fluid" src="{{ asset('uploads/offers/' . $offer->image) }}" alt="logo" width="100" height="100">
+                                    </div>
                                 </div>
 
                                 <div class="form-group mb-3">

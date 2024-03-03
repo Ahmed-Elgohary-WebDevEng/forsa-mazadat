@@ -52,6 +52,13 @@
                                         <span class="text-danger fw-semibold">{{ $message }}</span>
                                         @enderror
                                     </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label for="">اسم الحى</label>
+                                        <input type="text" name="area" class="form-control" value="{{ old('area') }}">
+                                        @error('area')
+                                        <span class="text-danger fw-semibold">{{ $message }}</span>
+                                        @enderror
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="mb-3 col-md-6">
